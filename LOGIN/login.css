@@ -5,7 +5,7 @@
 body{
     font-family: sans-serif;
     font-size: 16px;
-    background: url("/BG_IMG.jpeg");
+    background: url("BG_IMG.jpeg");
     background-size: cover;
     height: 100vh;
 }
@@ -53,13 +53,13 @@ body{
 }
 
 .forpass a{
-    color: rgb(103, 10, 10);
+    color: rgb(92, 13, 13);
     text-decoration: none;
     cursor: pointer;
 }
 
 .forpass a:hover{
-    color: rgb(79, 5, 5);
+    color: rgb(247, 243, 243);
     text-decoration: underline;
 }
 
