@@ -5,7 +5,7 @@
 body{
     font-family: sans-serif;
     font-size: 16px;
-    background: url("BG_IMG.jpeg");
+    background: url("LOGIN/BG_IMG.jpeg");
     background-size: cover;
     height: 100vh;
 }
