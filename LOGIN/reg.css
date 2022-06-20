@@ -38,28 +38,4 @@ body{
 .no-margin{
     margin: 0px;
 }
-.btn-appoinment{
-    background-color: #237395 !important;
-    border-color: #237395 !important;
-    width: 100%;
-}
-.content{
-    margin-top: 15%;
-    text-align: center;
-    color: #fff;
-    padding: 30px;
-}
-.content h1{
-    font-weight: 600;
-    font-size: 3.5rem;
-}
-.content p{
-    font-size: 22px;
-}
 
-
-
-
-@media screen and (max-width: 976px){
-
-}
