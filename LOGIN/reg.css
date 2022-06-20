@@ -1,3 +1,4 @@
+
 body{
     width: 100%;
     height: 100%;
@@ -10,6 +11,7 @@ body{
     background: linear-gradient(rgb(23, 160, 202) 35%,rgb(51, 183, 223) 70%,rgb(180, 236, 253) 100%);
     overflow: auto;
 }
+
 .form-data{
     margin-top: 15%;
     background-color: #fff;
@@ -25,6 +27,49 @@ body{
     font-size: 22px;
     font-weight: 600;
 }
+.form-row{
+    margin-bottom: 15px;
+}
+.form-control{
+    background-color: #f7f7ff;
+}
+.form-control:focus{
+    box-shadow: none;
+    border: 3px solid #138496;
+}
+
+.no-margin{
+    margin: 0px;
+}
+
+.btn-appoinment{
+    background-color: #237395 !important;
+    border-color: #237395 !important;
+    width: 100%;
+}
+
+.content{
+    margin-top: 15%;
+    text-align: center;
+    color: #fff;
+    padding: 30px;
+}
+.content h1{
+    font-weight: 600;
+    font-size: 3.5rem;
+}
+.content p{
+    font-size: 22px;
+}
+
+
+
+
+/* @media screen and (max-width: 976px){
+
+} */
+
+
 .form-row{
     margin-bottom: 15px;
 }
