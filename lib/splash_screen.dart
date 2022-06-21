@@ -28,7 +28,8 @@ class _SplashScreenState extends State<SplashScreen> {
       backgroundColor: Colors.white,
       body: Center(
         child: Image(
-          height: 200,
+          // fit: BoxFit.cover,
+          height: double.infinity,
           image: AssetImage('assets/splash_screen.jpg'),
         ),
       ),
@@ -42,7 +43,7 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   Future<void> gotoHomeScreen() async {
-    await Future.delayed(Duration(seconds: 2));
+    await Future.delayed(Duration(seconds: 3));
     Navigator.of(context).pushReplacement(MaterialPageRoute(
       builder: (context) => HomeScreen(),
     ));
