@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    background: url("undraw_doctors_hwty.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #d1dce77e;
+    border-radius: 11px;
+}
+
+.center h1{
+    text-align: center;
+    color: white;
+    padding: 0 0 20px 0;
+    border-bottom: 2px solid white;
+}
+
+.center form{
+    padding: 40px;
+}
+
+.center .textfield{
+    
+    position: relative;
+    margin:20px 0;
+    color: rgb(72, 27, 186);
+    border-bottom: 2px solid rgba(42, 32, 32, 0.231);
+}
+
+.center .textfield:hover{
+    color: rgba(19, 128, 13, 0.517);
+    border-bottom: 2px solid rgba(5, 132, 20, 0.775);
+    transition: ease-in 0.5s;
+}
+
+.textfield input{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 30px;
+    font-size: 13px;
+    color: silver;
+}
+
+.forpass a{
+    color: rgb(103, 10, 10);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.forpass a:hover{
+    color: rgb(79, 5, 5);
+    text-decoration: underline;
+}
+
+input[type="submit"]{
+    background-color: rgba(5, 63, 144, 0.544);
+    color: white;
+    border-radius: 3px;
+    border-color: rgb(52, 52, 209);
+    height: 40px;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+input[type="submit"]:hover{
+    background: rgba(83, 153, 176, 0.592);
+    color: rgb(24, 79, 169);
+    border: rgba(96, 157, 218, 0.292);
+}
+
+.signin a{
+    color: rgb(58, 0, 248);
+    text-decoration: none;
+}
+
+.signin a:hover{
+    text-decoration: underline;
+}
