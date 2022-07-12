@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+* {
+  margin: 0
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #e98cd2;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  font-family: "Oswald", sans-serif;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.registartion-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-family: sans-serif;
+  background-color: #5fdaff;
+  padding: 20px;
+}
+
+.registartion-form input,
+.registartion-form select,
+.registartion-form textarea {
+  border: none;
+  padding: 5px;
+  margin-top: 10px;
+  font-family: sans-serif;
+}
+
+.registartion-form input:focus,
+.registartion-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgb(178, 139, 139), 0 0 10px rgb(224, 52, 52);
+}
+
+.registartion-form .submit {
+  width: 100%;
+  padding: 8px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.registartion-form .submit:hover {
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+
+.hide {
+  display: none;
+}
