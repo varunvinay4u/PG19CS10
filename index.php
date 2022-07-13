@@ -1,3 +1,18 @@
+<?php 
+session_start();
+
+	 include("assets/connection.php");
+	 include("assets/functions.php"); 
+
+	 #$user_data = check_login($con);
+
+?>
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +49,7 @@
                     <li><a href="#contacct">Contact</a></li>
                     <li><a href="#facilities">Facilities</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a class="btn" href="/assets/signlog.html">Sign In</a></li>
+                    <li><a class="btn" href="/assets/login.php">Sign In</a></li>
                  </ul>
               </div>
            </nav>
@@ -167,7 +182,7 @@
 
     <section class="bookslot">
         <h1>Book A Slot Now</h1>
-        <a href="/html/signlog.html" class="hero-btn">Join with Us</a>
+        <a href="/assets/login.php" class="hero-btn">Join with Us</a>
     </section>
 
 

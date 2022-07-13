@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Signup</title>
-  <link rel="stylesheet" href="/reg-detailsP.css">
+  <link rel="stylesheet" href="css/reg-detailsP.css">
 </head>
 
 <body>
@@ -78,5 +78,64 @@
 
 
 
-<script src="/reg-detailsP.js"></script>
+<script src="js/reg-detailsP.js"></script>
 </html>
+
+
+
+
+
+<?php
+
+
+session_start();
+
+	include("connection.php");
+	include("functions.php");
+
+
+	
+if($_SERVER['REQUEST_METHOD'] == "POST")
+
+	{
+		//something was posted
+		$name =$_POST['name'];
+		$password = $_POST['password'];
+   		#$category=$_POST['category'];
+		$email=$_POST['email'];
+		$phoneNumber=$_POST['phoneNumber'];
+		$gender=$_POST['gender'];
+		$zipcode=$_POST['zipcode'];
+		$location=$_POST['location'];
+		$Qualification=$_POST['Qualification'];
+		$DoctorRegistrationID=$_POST['DoctorRegistrationID'];
+
+		#if(!empty($email) && !empty($password))
+		#{
+
+			//save to database
+			$user_id = random_num(20);
+			$sql = "insert into login values ('',$user_id,'$category','$name','$email','$password',$phoneNumber,'$gender',$zipcode,'$location','$Qualification','$DoctorRegistrationID')";
+        //check if $category works in insert or not
+			
+			if ($con->query($sql) === TRUE) {
+  echo "New record created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . $con->error;
+}
+
+
+
+#mysqli_query($con, $query);
+			#echo "$name, $gender";
+			header("Location: login.php");
+			die;
+		#}else
+		#{
+		#	echo "Please enter some valid information!";
+		#}
+	}
+
+
+
+?>
