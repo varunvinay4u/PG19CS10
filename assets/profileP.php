@@ -71,6 +71,7 @@ session_start();
             <div class="container content clear-fix">
         
             <h2 class="mt-5 mb-5">Hello, <?php echo $user_data['name']; ?> <br> Profile Settings</h2>
+
             
             <div class="row" style="height:100%">
             
@@ -95,46 +96,36 @@ session_start();
                     <div class="container">
                     
                         <form>
-                    
                             <div class="form-group">
-
                                 <label for=fullName>Full Name</label>
                                 <input type="text" class="form-control" id="fullName">
-
                             </div>
                             <div class="form-group">
-
                                 <label for=email>Email</label>
                                 <input type="email" class="form-control" id="email">
-
                             </div>
                             <div class="form-group">
 
-                                <label for=pass>Password</label>
-                                <input type="password" class="form-control" id="pass">
-
+                                <label for=pass>Phone No :</label>
+                                <input type="number" class="form-control" id="number">
                             </div>
                             <div class="form-group ">
-
+                                <label for=category>Gender</label>
+                                <input type="category" class="form-control" id="gender">
+                            </div>
+                            <div class="form-group ">
                                 <label for=birthday>Birthday</label>
                                 <input type="date" class="form-control" id="birthday">
-
                             </div>
-                            
+
+
                             <div class="row mt-5">
-                            
                                 <div class="col">
-                                
                                     <button type="button" class="btn btn-primary btn-block">Save Changes</button>
-                                
                                 </div>
-                                
                                 <div class="col">
-                                
                                     <button type="button" class="btn btn-default btn-block">Cancel</button>
-                                
                                 </div>
-                            
                             </div>
 
                         </form>
