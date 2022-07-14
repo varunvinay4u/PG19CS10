@@ -81,11 +81,11 @@ session_start();
 	<input type="text" name="name" placeholder="Name">
 	<input type="email" name="email" placeholder="Email">
 	<input type="password" name="password" placeholder="Password">
-	<button>SignUp</button>
+	<button><a href="signup.php">SignUp</a></button>
 </form>
 </div>
 <div class="form-container sign-in-container">
-	<form action="#">
+	<form method="post" action="#">
 		<h1>Log In</h1>
 		<span class="heading-underline solid">
             <span></span>
@@ -100,7 +100,7 @@ session_start();
 	<input type="password" name="password" placeholder="Password">
 	<a href="frgt-pwd.html">Forgot Password ?</a>
 
-	<button>Log In</button>   //href=proffileP.h check if needed
+	<button>Log In</button>  
 	</form>
 </div>
 <div class="overlay-container">
@@ -113,7 +113,7 @@ session_start();
 		<div class="overlay-panel overlay-right">
 			<h1>Hello, Friend!</h1>
 			<p>Enter your details and start journey with us</p>
-			<a href="signup.php"><button class="ghost" id="signUp">Sign Up</button></a>
+			<button class="ghost" id="signUp">Sign Up</button>
 		</div>
 	</div>
 </div>

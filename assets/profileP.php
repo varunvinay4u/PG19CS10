@@ -19,7 +19,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MindBuddy</title>
-    <link rel="stylesheet" href="assets/css/profileP.css">
+    <link rel="stylesheet" href="css/profileP.css">
     <link rel="icon" type="image/png" href="images/logo_temp.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,7 +45,7 @@ session_start();
                 <a href="#" class="nav-link"><i class="far fa-bell"></i> Notifications</a>
                 <a href="#" class="nav-link"><i class="far fa-file-alt"></i>View Appoinment</a>
                 <a href="#" class="nav-link mb-auto"><i class="fas fa-cogs"></i> General</a>   
-                <a href="#" class="nav-link"><i class="bi bi-box-arrow-right"></i>Logout</a>
+                <a href="#" class="nav-link" ><i class="bi bi-box-arrow-right"></i>Logout</a>
  
         
         </div>
@@ -60,7 +60,7 @@ session_start();
                 <a href="#" class="nav-link"><i class="far fa-bell"></i> Notifications</a>
                 <a href="#" class="nav-link"><i class="far fa-file-alt"></i> View Appoinment</a>
                 <a href="#" class="nav-link mb-auto"><i class="fas fa-cogs"></i> General</a>
-                <a href="#" class="nav-link"><i class="bi bi-box-arrow-right"></i><b>Logout</b></a>
+                <a href="../index.php" class="nav-link"><i class="bi bi-box-arrow-right"></i><b>Logout</b></a>
             
             </div>
         
@@ -151,6 +151,6 @@ session_start();
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/profileP.js"> </script>
+    <script src="js/profileP.js"> </script>
 </body>
 </html>

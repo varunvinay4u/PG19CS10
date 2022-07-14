@@ -49,15 +49,16 @@ session_start();
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="#features">Features</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a class="btn" href="/assets/login.php">Sign In</a></li>
+                    <li><a class="btn" href="assets/login.php">Sign In</a></li>
                  </ul>
               </div>
            </nav>
         </header>
-        <div class="content">
+	  <div class="content" >
+		
             <h1>MindBuddy : Your Mental Health Care Partner</h1>
             <p>Don't Worry, We're Here to Help You</p> <br>
-            <a href="/html/bookappoinment.html" class="hero-btn btn-main">Book Appoinment</a>
+            <a href="assets/bookappoinment.html" class="hero-btn btn-main">Book Appoinment</a>
         </div>
     </div>
 	
@@ -74,19 +75,19 @@ session_start();
         jhgfdsazxcvbnm,poiuywqasdfghjkl.,mnbvcxz</p>
         <div class="row">
             <div class="service-col">
-                <img src="/assets/images/Educational-Counselling-1.jpg" alt="">
+                <img src="assets/images/Educational-Counselling-1.jpg" alt="">
                 <div class="layer">
                     <h3>Adult Counselling</h3>
                 </div>
             </div>
             <div class="service-col">
-                <img src="/assets/images/depressed-boy-talking-to-child-psychologist-about-vector-17941152.jpg" alt="">
+                <img src="assets/images/depressed-boy-talking-to-child-psychologist-about-vector-17941152.jpg" alt="">
                 <div class="layer">
                     <h3>Child Counselling</h3>
                 </div>
             </div>
             <div class="service-col">
-                <img src="/assets/images/Corporate-Wellness-Strategies.png" alt="">
+                <img src="assets/images/Corporate-Wellness-Strategies.png" alt="">
                 <div class="layer">
                     <h3>Corporate Wellness</h3>
                 </div>
@@ -105,13 +106,13 @@ session_start();
         </span>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. accusantium facilis!</p>
         <div class="row">
-            <div href="assets/meditation.html" class="features-col features-btn">
-                <h3>Meditation <i class="bi bi-stopwatch"></i></h3>
+            <div class="features-col features-btn">
+                <a href="assets/meditation.html"><h3>Meditation <i class="bi bi-stopwatch"></i></h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci nesciunt mollitia velit! Maxime, quam
                     dolorum magni accusamus saepe consectetur dolores suscipit ea doloribus necessitatibus ex! Unde recusandae ab
                     odio tempore.</p><br>
                 <!-- <a href="#" class="features-btn">Click Here <i class="bi bi-arrow-right"></i></a> -->
-            </div>
+            </div></a>
             <div href="#" class="features-col features-btn">
                 <h3>Calm Music <i class="bi bi-music-note-beamed"></i></h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci nesciunt mollitia velit! Maxime, quam
@@ -178,7 +179,7 @@ session_start();
 	
     <section class="bookslot">
         <h1>Book A Slot Now</h1>
-        <a href="/assets/login.php" class="hero-btn">Join with Us</a>
+        <a href="assets/login.php" class="hero-btn">Join with Us</a>
     </section>
 	
 	
