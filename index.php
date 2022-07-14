@@ -12,7 +12,6 @@ session_start();
 
 
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +25,8 @@ session_start();
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/js/main.js"> </script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
@@ -35,7 +35,7 @@ session_start();
 
     <div class="wrapper">
         <header>
-           <nav>
+           <nav class="navbar">
               <div class="menu-icon">
                  <i class="fa fa-bars fa-2x"></i>
               </div>
@@ -45,9 +45,9 @@ session_start();
               <div class="menu">
                  <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contacct">Contact</a></li>
-                    <li><a href="#facilities">Facilities</a></li>
+                    <li><a href="#review">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#features">Features</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a class="btn" href="/assets/login.php">Sign In</a></li>
                  </ul>
@@ -55,16 +55,136 @@ session_start();
            </nav>
         </header>
         <div class="content">
-            <h1>HEADINGGGG..........</h1>
-            <p>paragra[ph.......................................................
-                <br>..........................................................</p>
-            <a href="/html/bookappoinment.html" class="hero-btn">Book Appoinment</a>
+            <h1>MindBuddy : Your Mental Health Care Partner</h1>
+            <p>Don't Worry, We're Here to Help You</p> <br>
+            <a href="/html/bookappoinment.html" class="hero-btn btn-main">Book Appoinment</a>
         </div>
-     </div>
-  </body>
-</html>
+    </div>
+	
+	
+	
+	
+	
+	<section id="services" class="services">
+        <h1>Our Services</h1>
+        <span class="heading-underline solid">
+            <span></span>
+        </span>
+        <p>asdfghjklpoiuytrewqzxcvbnmwertyuioplk
+        jhgfdsazxcvbnm,poiuywqasdfghjkl.,mnbvcxz</p>
+        <div class="row">
+            <div class="service-col">
+                <img src="/assets/images/Educational-Counselling-1.jpg" alt="">
+                <div class="layer">
+                    <h3>Adult Counselling</h3>
+                </div>
+            </div>
+            <div class="service-col">
+                <img src="/assets/images/depressed-boy-talking-to-child-psychologist-about-vector-17941152.jpg" alt="">
+                <div class="layer">
+                    <h3>Child Counselling</h3>
+                </div>
+            </div>
+            <div class="service-col">
+                <img src="/assets/images/Corporate-Wellness-Strategies.png" alt="">
+                <div class="layer">
+                    <h3>Corporate Wellness</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	
+	
+	
+	
+    <section id="features" class="features">
+        <h1>Features</h1>
+        <span class="heading-underline solid">
+            <span></span>
+        </span>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. accusantium facilis!</p>
+        <div class="row">
+            <div href="assets/meditation.html" class="features-col features-btn">
+                <h3>Meditation <i class="bi bi-stopwatch"></i></h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci nesciunt mollitia velit! Maxime, quam
+                    dolorum magni accusamus saepe consectetur dolores suscipit ea doloribus necessitatibus ex! Unde recusandae ab
+                    odio tempore.</p><br>
+                <!-- <a href="#" class="features-btn">Click Here <i class="bi bi-arrow-right"></i></a> -->
+            </div>
+            <div href="#" class="features-col features-btn">
+                <h3>Calm Music <i class="bi bi-music-note-beamed"></i></h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci nesciunt mollitia velit! Maxime, quam
+                    dolorum magni accusamus saepe consectetur dolores suscipit ea doloribus necessitatibus ex! Unde recusandae ab
+                    odio tempore.</p><br>
+                <!-- <a href="#" class="features-btn">Click Here <i class="bi bi-arrow-right"></i></a> -->
+            </div>
+            <div href="#" class="features-col features-btn">
+                <h3>heading3 <i class="bi bi-emoji-smile"></i></h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci nesciunt mollitia velit! Maxime, quam
+                    dolorum magni accusamus saepe consectetur dolores suscipit ea doloribus necessitatibus ex! Unde recusandae ab
+                    odio tempore.</p><br>
+                <!-- <a href="#" class="features-btn">Click Here <i class="bi bi-arrow-right"></i></a> -->
+            </div>
+        </div>
+    </section>
 
-    
+
+
+
+
+    <section class="review" id="review">
+        <h1>What our customers says</h1>
+        <p>Lorem ipsum dolor, sit amet eos ipsa maxime recusandae!</p>
+        <div class="row">
+            <div class="review-col">
+                <img src="#" alt="">
+                <div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Omnis voluptatem optio delectus officia beatae aperiam 
+                        odit voluptates dolores tenetur maiores minus, 
+                        cum eveniet sequi incidunt quam saepe est ex deleniti!
+                    </p>
+                    <h3>name1</h3>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                </div>
+            </div>
+            <div class="review-col">
+                <img src="#" alt="">
+                <div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Omnis voluptatem optio delectus officia beatae aperiam 
+                        odit voluptates dolores tenetur maiores minus, 
+                        cum eveniet sequi incidunt quam saepe est ex deleniti!
+                    </p>
+                    <h3>name2</h3>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	
+	
+	
+	
+    <section class="bookslot">
+        <h1>Book A Slot Now</h1>
+        <a href="/assets/login.php" class="hero-btn">Join with Us</a>
+    </section>
+	
+	
+	
+	
+	
     <section id="contact" class="contact-us">
         <h1>We Are Here To Help</h1>
         <span class="heading-underline solid">
@@ -111,127 +231,6 @@ session_start();
 
 
 
-    <section id="facilities" class="facilities">
-        <h1>Our facilities</h1>
-        <span class="heading-underline solid">
-            <span></span>
-        </span>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. accusantium facilis!</p>
-        <div class="row">
-            <div class="facilities-col">
-                <img src="/demo.png" alt="">
-                <h3>heading1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci nesciunt mollitia velit! Maxime, quam
-                    dolorum magni accusamus saepe consectetur dolores suscipit ea doloribus necessitatibus ex! Unde recusandae ab
-                    odio tempore.</p>
-            </div>
-            <div class="facilities-col">
-                <img src="/demo.png" alt="">
-                <h3>heading1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci nesciunt mollitia velit! Maxime, quam
-                    dolorum magni accusamus saepe consectetur dolores suscipit ea doloribus necessitatibus ex! Unde recusandae ab
-                    odio tempore.</p>
-            </div>
-            <div class="facilities-col">
-                <img src="/demo.png" alt="">
-                <h3>heading1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci nesciunt mollitia velit! Maxime, quam
-                    dolorum magni accusamus saepe consectetur dolores suscipit ea doloribus necessitatibus ex! Unde recusandae ab
-                    odio tempore.</p>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-    <section id="services" class="services">
-        <h1>our services</h1>
-        <span class="heading-underline solid">
-            <span></span>
-        </span>
-        <p>asdfghjklpoiuytrewqzxcvbnmwertyuioplk
-        jhgfdsazxcvbnm,poiuywqasdfghjkl.,mnbvcxz</p>
-        <div class="row">
-            <div class="service-col">
-                <img src="/Educational-Counselling-1.jpg" alt="">
-                <div class="layer">
-                    <h3>Counselling</h3>
-                </div>
-            </div>
-            <div class="service-col">
-                <img src="/depressed-boy-talking-to-child-psychologist-about-vector-17941152.jpg" alt="">
-                <div class="layer">
-                    <h3>MindBuddy</h3>
-                </div>
-            </div>
-            <div class="service-col">
-                <img src="/Corporate-Wellness-Strategies.png" alt="">
-                <div class="layer">
-                    <h3>Corporate Wellness</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
-    <section class="bookslot">
-        <h1>Book A Slot Now</h1>
-        <a href="/assets/login.php" class="hero-btn">Join with Us</a>
-    </section>
-
-
-
-
-
-    <section class="review">
-        <h1>What our customers says</h1>
-        <p>Lorem ipsum dolor, sit amet eos ipsa maxime recusandae!</p>
-        <div class="row">
-            <div class="review-col">
-                <img src="/logo_temp.png" alt="">
-                <div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                        Omnis voluptatem optio delectus officia beatae aperiam 
-                        odit voluptates dolores tenetur maiores minus, 
-                        cum eveniet sequi incidunt quam saepe est ex deleniti!
-                    </p>
-                    <h3>name1</h3>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-half"></i>
-                </div>
-            </div>
-            <div class="review-col">
-                <img src="/logo_temp.png" alt="">
-                <div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                        Omnis voluptatem optio delectus officia beatae aperiam 
-                        odit voluptates dolores tenetur maiores minus, 
-                        cum eveniet sequi incidunt quam saepe est ex deleniti!
-                    </p>
-                    <h3>name2</h3>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star"></i>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
     <section class="footer">
         <h3>About Us</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -248,11 +247,6 @@ session_start();
         <p>© 2022 MindBuddy</p>
     </section>
     
-
-
-
-
-
 
 
 
