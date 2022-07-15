@@ -4,16 +4,19 @@ body
 font-family: 'Righteous', cursive;
 	margin:0px;
 	padding:0px;
-	background:#ccc;
-	overflow:hidden;
+	background:rgb(0, 0, 0);
+	overflow:auto;
 }
+
+
 
 .box
 {
-	width:700px;
-	height:400px;
+	width:100%;
+	height:100%;
 	background:#000;
 	position:absolute;
+  overflow:auto;
 	top:50%;
 	left:50%;
 	transform:translate(-50%,-50%)
@@ -33,7 +36,7 @@ h1,p
 .box h1
 {
 	padding-top:150px;
-	color:fff;
+	color:rgb(255, 255, 255);
 	font-size:50px;
 	font-family: 'Anton', sans-serif;
 }
