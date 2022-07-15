@@ -56,7 +56,7 @@ session_start();
         </header>
 	  <div class="content" >
 		
-            <h1>MindBuddy : Your Mental Health Care Partner</h1>
+            <h1>MindBuddy : Your Mental Health Partner</h1>
             <p>Don't Worry, We're Here to Help You</p> <br>
             <a href="assets/bookappoinment.html" class="hero-btn btn-main">Book Appoinment</a>
         </div>
@@ -71,8 +71,7 @@ session_start();
         <span class="heading-underline solid">
             <span></span>
         </span>
-        <p>asdfghjklpoiuytrewqzxcvbnmwertyuioplk
-        jhgfdsazxcvbnm,poiuywqasdfghjkl.,mnbvcxz</p>
+        <p>We provide three major services: </p>
         <div class="row">
             <div class="service-col">
                 <img src="assets/images/Educational-Counselling-1.jpg" alt="">
