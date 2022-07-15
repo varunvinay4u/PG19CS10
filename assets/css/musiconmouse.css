@@ -1,0 +1,8 @@
+body {
+  background-color: #222;
+  overflow: hidden;
+}
+canvas {
+  background: radial-gradient( farthest-corner circle at left bottom, #ffbf02, #ff7f01);
+  margin: 0 auto;
+}
