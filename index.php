@@ -103,27 +103,21 @@ session_start();
         <span class="heading-underline solid">
             <span></span>
         </span>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. accusantium facilis!</p>
+        <p>Try out our various features to <br>help you relax and calm down! <br>or just to have some fun!!</p>
         <div class="row">
             <div class="features-col features-btn">
                 <a href="assets/meditation.html"><h3>Meditation <i class="bi bi-stopwatch"></i></h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci nesciunt mollitia velit! Maxime, quam
-                    dolorum magni accusamus saepe consectetur dolores suscipit ea doloribus necessitatibus ex! Unde recusandae ab
-                    odio tempore.</p><br>
+                <p>Meditation helps you calm down and relax </p><br>
                 <!-- <a href="#" class="features-btn">Click Here <i class="bi bi-arrow-right"></i></a> -->
             </div></a>
             <div href="#" class="features-col features-btn">
                 <h3>Calm Music <i class="bi bi-music-note-beamed"></i></h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci nesciunt mollitia velit! Maxime, quam
-                    dolorum magni accusamus saepe consectetur dolores suscipit ea doloribus necessitatibus ex! Unde recusandae ab
-                    odio tempore.</p><br>
+                <p>The power of music in helping you heal is immense</p><br>
                 <!-- <a href="#" class="features-btn">Click Here <i class="bi bi-arrow-right"></i></a> -->
             </div>
             <div href="#" class="features-col features-btn">
-                <h3>heading3 <i class="bi bi-emoji-smile"></i></h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci nesciunt mollitia velit! Maxime, quam
-                    dolorum magni accusamus saepe consectetur dolores suscipit ea doloribus necessitatibus ex! Unde recusandae ab
-                    odio tempore.</p><br>
+                <h3>Relaxation <i class="bi bi-emoji-smile"></i></h3>
+                <p>Try out some of our fun relaxing activities: watch bubbles float around on your screen or try hypnotising yourself for fun!!</p><br>
                 <!-- <a href="#" class="features-btn">Click Here <i class="bi bi-arrow-right"></i></a> -->
             </div>
         </div>
@@ -134,18 +128,15 @@ session_start();
 
 
     <section class="review" id="review">
-        <h1>What our customers says</h1>
-        <p>Lorem ipsum dolor, sit amet eos ipsa maxime recusandae!</p>
+        <h1>What our customers have to say about us</h1>
+        <p>read our reviews to see how MindBuddy has been useful for others like you!</p>
         <div class="row">
             <div class="review-col">
                 <img src="#" alt="">
                 <div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                        Omnis voluptatem optio delectus officia beatae aperiam 
-                        odit voluptates dolores tenetur maiores minus, 
-                        cum eveniet sequi incidunt quam saepe est ex deleniti!
+                    <p> Very useful and helpful. the activities and meditation features always helps me relax
                     </p>
-                    <h3>name1</h3>
+                    <h3>Swathi</h3>
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
@@ -156,12 +147,9 @@ session_start();
             <div class="review-col">
                 <img src="#" alt="">
                 <div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                        Omnis voluptatem optio delectus officia beatae aperiam 
-                        odit voluptates dolores tenetur maiores minus, 
-                        cum eveniet sequi incidunt quam saepe est ex deleniti!
+                    <p>One of the best platforms I've come across that acts as a companion and helps with improving your mental health
                     </p>
-                    <h3>name2</h3>
+                    <h3>Thabsheera</h3>
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
@@ -190,7 +178,7 @@ session_start();
         <span class="heading-underline solid">
             <span></span>
         </span>
-        <p>qjkqshwjqdv,qwhjvdmqwgdvjqnhwgddddd hgdwqhgdjqdqdqwdjb dhdqhwgy</p>
+        <p>feel free to contact us if you have any queries or issues!! <br> We are here to help you 24/7</p>
         <div class="row">
             <div class="contact-col">
                 <a href="" class="contact-icon">
@@ -198,9 +186,11 @@ session_start();
                 </a>
                 <h3>Phone Number</h3>
                 <p>
-                    123456789 <br>
-                    123456789 <br>
-                    123456789
+                    8792878758 <br>
+                    8547552799 <br>
+                    9383402154 <br>
+		    9539583596
+			
                 </p>
             </div>
             <div class="contact-col">
@@ -208,9 +198,10 @@ session_start();
                     <i class="bi bi-envelope-fill"></i>
                 </a>
                 <h3>Email</h3>
-                <p>abcd@gmail.com <br>
-                    abcd@gmail.com <br>
-                    abcd@gmail.com
+                <p>varunvinay@mindbuddy.com <br>
+                    thabsheerack@mindbuddy.com <br>
+                    swathik@mindbuddy.com <br>
+		    sreeharips@mindbuddy.com
                 </p>
             </div>
             <div class="contact-col">
@@ -233,10 +224,9 @@ session_start();
 
     <section class="footer">
         <h3>About Us</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Ab doloribus temporibus est ea alias dolorem numquam explicabo, 
-            <br> adipisci aspernatur saepe ipsum reprehenderit sit, 
-            impedit,excepturi optio ad sapiente.
+        <p>Mind Buddy is a platform aimed to help you improve your mental health <br>
+		It provides medical appointment services, along with various other features and services. <br>
+		We are a team focused at helping you be the best version of yourself
         </p>
         <div class="icons">
             <i class="bi bi-facebook"></i>
