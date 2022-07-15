@@ -101,7 +101,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
 		//something was posted
 		$name =$_POST['name'];
 		$password = $_POST['password'];
-   		#$category=$_POST['category'];
+   	$category=$_POST['category'];
 		$email=$_POST['email'];
 		$phoneNumber=$_POST['phoneNumber'];
 		$gender=$_POST['gender'];
@@ -115,8 +115,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
 
 			//save to database
 			$user_id = random_num(20);
-			$sql = "insert into login values ('',$user_id,'abc','$name','$email','$password',$phoneNumber,'$gender',$zipcode,'$location','$Qualification','$DoctorRegistrationID')";
-        //check if $category works in insert or not
+			$sql = "insert into login values ('',$user_id,'$category','$name','$email','$password',$phoneNumber,'$gender',$zipcode,'$location','$Qualification','$DoctorRegistrationID')";
+        //check if $category works in insert or not !!NOT
 			
 			if ($con->query($sql) === TRUE) {
   echo "New record created successfully";
