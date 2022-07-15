@@ -1,0 +1,55 @@
+body{
+  width:100vw;
+  height:100vh;
+  background: conic-gradient(purple, turquoise, teal, purple);
+  display:flex;
+  align-content:center;
+  justify-content:center;
+  overflow:hidden;
+}
+.enclose{
+  width:90vw;
+  height:90vw;
+  border-radius: 50%;
+  animation: spin 18s linear 5s infinite;
+  align-self:center;
+  display:flex;
+  align-content:center;
+  justify-content:center;
+}
+.box{
+  background: conic-gradient(purple, lightseagreen, teal, purple);
+  width:97%;
+  height:97%;
+  //border:1px solid white;
+  border-radius: 50%;
+  align-self:center;
+  display:flex;
+  align-content:center;
+  justify-content:center;
+  transform: rotate(1deg);
+  animation: spinIn 5s linear;
+  animation-fill-mode: forwards;
+}
+.last{
+  width:75%;
+  height:75%;
+  animation: spinInMore 5s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes spin {
+    100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinIn {
+    100% {
+    transform: rotate(4deg);
+  }
+}
+@keyframes spinInMore {
+    100% {
+    transform: rotate(18deg);
+  }
+}
