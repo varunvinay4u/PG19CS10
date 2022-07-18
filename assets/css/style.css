@@ -73,7 +73,6 @@ nav ul {
 nav.black ul {
     background: #bd4d67df;
 }
-/* change */
 
 nav ul li {
     font-weight: 500;
@@ -154,7 +153,6 @@ nav ul li a {
     cursor: pointer;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
-/* change */
 
 .hero-btn{
     display: inline-block;
@@ -212,7 +210,6 @@ nav ul li a {
 .layer:hover{
     background-color: #bd4d67df;
 }
-/* change */
 .layer h3{
     width: 100%;
     font-weight: 500;
@@ -278,7 +275,6 @@ nav ul li a {
     color: #5a5656;
     text-align: center;
 }
-/* change */
 .features-col h3{
     font-size: 24px;
     margin-top: 16px;
@@ -314,7 +310,6 @@ nav ul li a {
 .review-col:hover{
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
-/* change */
 .review-col img{
     height: 40px;
     margin-left: 5px;
@@ -424,7 +419,6 @@ p{
 .contact-col .row .bi{
     color: #09479e;
 }
-/* change */
 .footer{
     width: 100%;
     text-align: center;
@@ -446,7 +440,6 @@ p{
     color: #f44336;
 }
 
-/* change */
 
 
 
