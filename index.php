@@ -112,19 +112,25 @@ session_start();
         <p>Try out our various features to <br>help you relax and calm down! <br>or just to have some fun!!</p>
         <div class="row">
             <div class="features-col features-btn">
-                <a href="assets/meditation.html"><h3>Meditation <i class="bi bi-stopwatch"></i></h3>
-                <p>Meditation helps you calm down and relax </p><br>
-                <!-- <a href="#" class="features-btn">Click Here <i class="bi bi-arrow-right"></i></a> -->
-            </div></a>
-            <div href="#" class="features-col features-btn">
-                <h3>Calm Music <i class="bi bi-music-note-beamed"></i></h3>
-                <p>The power of music in helping you heal is immense</p><br>
-                <!-- <a href="#" class="features-btn">Click Here <i class="bi bi-arrow-right"></i></a> -->
+                <a href="assets/meditation.html" style="text-decoration: none;">
+                    <h3>Meditation <i class="bi bi-stopwatch"></i></h3>
+                    <p>Meditation helps you calm down and relax </p>
+                    <img src="/assets/images/meditation_timer.jpg" alt="">
+                </a>
             </div>
-            <div href="#" class="features-col features-btn">
-                <h3>Relaxation <i class="bi bi-emoji-smile"></i></h3>
-                <p>Try out some of our fun relaxing activities: watch bubbles float around on your screen or try hypnotising yourself for fun!!</p><br>
-                <!-- <a href="#" class="features-btn">Click Here <i class="bi bi-arrow-right"></i></a> -->
+            <div class="features-col features-btn">
+                <a href="#" style="text-decoration: none;">
+                    <h3>Calm Music <i class="bi bi-music-note-beamed"></i></h3>
+                    <p>The power of music in helping you heal is immense</p>
+                    <img src="/assets/images/calm_music.jpg" alt="">
+                </a>
+            </div>
+            <div class="features-col features-btn">
+                <a href="#" style="text-decoration: none;">
+                    <h3>Relaxation <i class="bi bi-emoji-smile"></i></h3>
+                    <p>Try out some of our fun relaxing activities: watch bubbles float around on your screen or try hypnotising yourself for fun!!</p>
+                    <img src="/assets/images/undraw_Mobile_user_re_xta4.png" alt="">
+                </a>
             </div>
         </div>
     </section>
@@ -174,72 +180,61 @@ session_start();
         <h1>Book A Slot Now</h1>
         <a href="assets/login.php" class="hero-btn">Join with Us</a>
     </section>
-	
-	
-	
-	
-	
-    <section id="contact" class="contact-us">
-        <h1>We Are Here To Help</h1>
-        <span class="heading-underline solid">
-            <span></span>
-        </span>
-        <p>feel free to contact us if you have any queries or issues!! <br> We are here to help you 24/7</p>
-        <div class="row">
-            <div class="contact-col">
-                <a href="" class="contact-icon">
-                    <i class="bi bi-telephone-fill"></i>
-                </a>
-                <h3>Phone Number</h3>
-                <p>
-                    8792878758 <br>
-                    8547552799 <br>
-                    9383402154 <br>
-		    9539583596
-			
-                </p>
-            </div>
-            <div class="contact-col">
-                <a href="" class="contact-icon">
-                    <i class="bi bi-envelope-fill"></i>
-                </a>
-                <h3>Email</h3>
-                <p>varunvinay@mindbuddy.com <br>
-                    thabsheerack@mindbuddy.com <br>
-                    swathik@mindbuddy.com <br>
-		    sreeharips@mindbuddy.com
-                </p>
-            </div>
-            <div class="contact-col">
-                <a href="" class="contact-icon">
-                    <i class="bi bi-chat-right-text-fill"></i>
-                </a>
-                <h3>Social Network</h3>
-                <div class="row">
-                    <i class="bi bi-facebook"></i>
-                    <i class="bi bi-instagram"></i>
-                    <i class="bi bi-linkedin"></i>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
 
 
 
     <section class="footer">
+        <section id="contact" class="contact-us">
+            <!-- <h1>We Are Here To Help</h1>
+            <span class="heading-underline solid">
+                <span></span>
+            </span> -->
+            <p>feel free to contact us if you have any queries or issues!! <br> We are here to help you 24/7</p>
+            <div class="row">
+                <div class="contact-col">
+                    <a href="" class="contact-icon">
+                        <i class="bi bi-telephone-fill"></i>
+                    </a>
+                    <h3>Phone Number</h3>
+                    <p>
+                        8792878758 <br>
+                        8547552799 <br>
+                        9383402154 <br>
+                        9539583596
+                
+                    </p>
+                </div>
+                <div class="contact-col">
+                    <a href="" class="contact-icon">
+                        <i class="bi bi-envelope-fill"></i>
+                    </a>
+                    <h3>Email</h3>
+                    <p>varunvinay@mindbuddy.com <br>
+                        thabsheerack@mindbuddy.com <br>
+                        swathik@mindbuddy.com <br>
+                        sreeharips@mindbuddy.com
+                    </p>
+                </div>
+                <div class="contact-col">
+                    <a href="" class="contact-icon">
+                        <i class="bi bi-chat-right-text-fill"></i>
+                    </a>
+                    <h3>Social Network</h3>
+                    <div class="row">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
         <h3>About Us</h3>
         <p>Mind Buddy is a platform aimed to help you improve your mental health <br>
 		It provides medical appointment services, along with various other features and services. <br>
 		We are a team focused at helping you be the best version of yourself
         </p>
-        <div class="icons">
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-twitter"></i>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-linkedin"></i>
-        </div>
         <p>© 2022 MindBuddy</p>
     </section>
     
