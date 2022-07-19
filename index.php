@@ -115,7 +115,7 @@ session_start();
                 <a href="assets/meditation.html" style="text-decoration: none;">
                     <h3>Meditation <i class="bi bi-stopwatch"></i></h3>
                     <p>Meditation helps you calm down and relax </p> <br><br>
-                    <img src="/assets/images/meditation_timer.jpg" alt="">
+                    <img src="/assets/images/meditation_timer.png" alt="">
                 </a>
             </div>
             <div class="features-col features-btn">
