@@ -114,14 +114,14 @@ session_start();
             <div class="features-col features-btn">
                 <a href="assets/meditation.html" style="text-decoration: none;">
                     <h3>Meditation <i class="bi bi-stopwatch"></i></h3>
-                    <p>Meditation helps you calm down and relax </p>
+                    <p>Meditation helps you calm down and relax </p> <br><br>
                     <img src="/assets/images/meditation_timer.jpg" alt="">
                 </a>
             </div>
             <div class="features-col features-btn">
                 <a href="#" style="text-decoration: none;">
                     <h3>Calm Music <i class="bi bi-music-note-beamed"></i></h3>
-                    <p>The power of music in helping you heal is immense</p>
+                    <p>The power of music in helping you heal is immense</p> <br>
                     <img src="/assets/images/calm_music.jpg" alt="">
                 </a>
             </div>
