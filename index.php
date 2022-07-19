@@ -129,7 +129,7 @@ session_start();
                 <a href="#" style="text-decoration: none;">
                     <h3>Relaxation <i class="bi bi-emoji-smile"></i></h3>
                     <p>Try out some of our fun relaxing activities: watch bubbles float around on your screen or try hypnotising yourself for fun!!</p>
-                    <img src="/assets/images/undraw_Mobile_user_re_xta4.png" alt="">
+                    <img src="/assets/images/meditation_activities.png" alt="">
                 </a>
             </div>
         </div>
