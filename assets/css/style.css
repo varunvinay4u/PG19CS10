@@ -245,8 +245,7 @@ nav ul li a {
 .features-btn{
     display: inline-block;
     text-decoration: none;
-    color: #000;
-    border: 1px solid #000;
+    border: 1px solid #decabd;
     padding: 9px 11px;
     font-size: 16px;
     font-weight: 500;
@@ -270,6 +269,7 @@ nav ul li a {
 .features-col img{
     width: 100%;
     display: block;
+    border-radius: 16px;
 }
 .features-col p{
     padding: 0;
@@ -277,7 +277,7 @@ nav ul li a {
     text-align: center;
 }
 .features-col i{
-    color: #b94e67;
+    color: #503349;
 }
 
 
