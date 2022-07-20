@@ -40,7 +40,7 @@
         </tr>
         <tr>
           <td><label for="phoneNumber">Phone Number:</label></td>
-          <td><input type="number" name="phoneNumber" id="phoneNumber" placeholder="Phone number"></td>
+          <td><input type="numbers" name="phoneNumber" id="phoneNumber" placeholder="Phone number"></td>
         </tr>
         <tr>
           <td><label for="gender">Gender:</label></td>
