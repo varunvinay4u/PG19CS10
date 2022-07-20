@@ -119,13 +119,23 @@ session_start();
                 </a>
             </div>
              
-            <div class="features-col features-btn">
+            <!-- <div class="features-col features-btn">
                 <a href="#" style="text-decoration: none;">
                     <img src="/assets/images/calm_music.jpg" alt="">
                     <div class="layer">
                         <h3>Calm Music <i class="bi bi-music-note-beamed"></i></h3>
                     </div>
                 </a>
+            </div> -->
+
+            <div class="features-col features-btn" style="text-align: center; border: transparent; background: linear-gradient(120deg, #b04c637c, #b270697c, #b04c637c);">
+                <h3> <br><br>
+                    Sit <br>
+                    Relax <br>
+                    Take a deep breath, <br>
+                    and just enjoy your life <br>
+                    <i class="bi bi-heart-fill" style="color: #b21b1b; font-size: 16px;"></i>
+                </h3>
             </div>
              
             <div class="features-col features-btn">
