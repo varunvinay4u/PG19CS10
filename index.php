@@ -51,10 +51,9 @@ session_start();
               <div class="menu">
                  <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#review">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
                     <li><a href="#features">Features</a></li>
                     <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <li><a class="btn" href="assets/login.php">Sign In</a></li>
                  </ul>
               </div>
