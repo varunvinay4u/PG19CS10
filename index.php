@@ -113,25 +113,28 @@ session_start();
         <div class="row">
             <div class="features-col features-btn">
                 <a href="assets/meditation.html" style="text-decoration: none;">
-                    <h3>Meditation <i class="bi bi-stopwatch"></i></h3>
-                    <p>Meditation helps you calm down and relax </p> <br><br>
                     <img src="/assets/images/meditation_timer.png" alt="">
+                    <div class="layer">
+                        <h3>Meditation <i class="bi bi-stopwatch"></i></h3>
+                    </div>
                 </a>
             </div>
              
             <div class="features-col features-btn">
                 <a href="#" style="text-decoration: none;">
-                    <h3>Calm Music <i class="bi bi-music-note-beamed"></i></h3>
-                    <p>The power of music in helping you heal is immense</p> <br>
                     <img src="/assets/images/calm_music.jpg" alt="">
+                    <div class="layer">
+                        <h3>Calm Music <i class="bi bi-music-note-beamed"></i></h3>
+                    </div>
                 </a>
             </div>
              
             <div class="features-col features-btn">
                 <a href="#" style="text-decoration: none;">
-                    <h3>Relaxation <i class="bi bi-emoji-smile"></i></h3>
-                    <p>Try out some of our fun relaxing activities: watch bubbles float around on your screen or try hypnotising yourself for fun!!</p>
                     <img src="/assets/images/meditation_activities.png" alt="">
+                    <div class="layer">
+                        <h3>Relaxation <i class="bi bi-emoji-smile"></i></h3>
+                    </div>
                 </a>
             </div>
              
@@ -144,6 +147,9 @@ session_start();
 
     <section class="review" id="review">
         <h1>What our customers have to say about us</h1>
+        <span class="heading-underline solid">
+            <span></span>
+        </span>
         <p>read our reviews to see how MindBuddy has been useful for others like you!</p>
         <div class="row">
             <div class="review-col">
@@ -192,7 +198,7 @@ session_start();
 
     <section class="footer">
         <section id="contact" class="contact-us">
-            <p>feel free to contact us if you have any queries or issues!! <br> We are here to help you 24/7</p>
+            <p class="footer-abt">feel free to contact us if you have any queries or issues!! <br> We are here to help you 24/7</p>
             <div class="row">
                 <div class="contact-col">
                     <a href="" class="contact-icon">
@@ -231,12 +237,7 @@ session_start();
                 </div>
             </div>
         </section>
-        <h3>About Us</h3>
-        <p>Mind Buddy is a platform aimed to help you improve your mental health <br>
-		It provides medical appointment services, along with various other features and services. <br>
-		We are a team focused at helping you be the best version of yourself
-        </p>
-        <p>© 2022 MindBuddy</p>
+        <p style="color: #000; font-size: 13px;">© 2022 MindBuddy</p>
     </section>
     
 
