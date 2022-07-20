@@ -25,8 +25,8 @@ session_start();
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/js/main.js"> </script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
@@ -118,6 +118,7 @@ session_start();
                     <img src="/assets/images/meditation_timer.png" alt="">
                 </a>
             </div>
+             
             <div class="features-col features-btn">
                 <a href="#" style="text-decoration: none;">
                     <h3>Calm Music <i class="bi bi-music-note-beamed"></i></h3>
@@ -125,6 +126,7 @@ session_start();
                     <img src="/assets/images/calm_music.jpg" alt="">
                 </a>
             </div>
+             
             <div class="features-col features-btn">
                 <a href="#" style="text-decoration: none;">
                     <h3>Relaxation <i class="bi bi-emoji-smile"></i></h3>
@@ -132,6 +134,7 @@ session_start();
                     <img src="/assets/images/meditation_activities.png" alt="">
                 </a>
             </div>
+             
         </div>
     </section>
 
@@ -144,7 +147,7 @@ session_start();
         <p>read our reviews to see how MindBuddy has been useful for others like you!</p>
         <div class="row">
             <div class="review-col">
-                <img src="#" alt="">
+                <img src="/assets/images/user-icon.png" alt="">
                 <div>
                     <p> Very useful and helpful. the activities and meditation features always helps me relax
                     </p>
@@ -157,7 +160,7 @@ session_start();
                 </div>
             </div>
             <div class="review-col">
-                <img src="#" alt="">
+                <img src="/assets/images/user-icon.png" alt="">
                 <div>
                     <p>One of the best platforms I've come across that acts as a companion and helps with improving your mental health
                     </p>
@@ -180,17 +183,15 @@ session_start();
         <h1>Book A Slot Now</h1>
         <a href="assets/login.php" class="hero-btn">Join with Us</a>
     </section>
-
+	
+	
+	
 
 
 
 
     <section class="footer">
         <section id="contact" class="contact-us">
-            <!-- <h1>We Are Here To Help</h1>
-            <span class="heading-underline solid">
-                <span></span>
-            </span> -->
             <p>feel free to contact us if you have any queries or issues!! <br> We are here to help you 24/7</p>
             <div class="row">
                 <div class="contact-col">
