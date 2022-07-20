@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+nav{
+    background: #503349;
+    width: 100%;
+    overflow: auto;
+    position: fixed;
+    z-index: 1;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+li{
+    float: left;
+}
+nav a{
+    width: 120px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background: #503349;
+    font-size: 17px;
+    color: #fff;
+    padding: 20px 10px;
+    font-weight: 500;
+}
+nav a:hover{
+    background: #decabd;
+    color: #000;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    overflow: auto;
+}
+.container h1{
+    color: #000;
+    margin-top: 7rem;
+    text-align: center;
+}
+.container p{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #333;
+}
+
+.activities{
+    margin: 11px 7px;
+    background: #decabd;
+    border-radius: 16px;
+    float: left;
+    width: 410px;
+}
+.activities img{
+    -webkit-transform: scale(0.96);
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+.activities img:hover{
+	transform: scale(1);
+}
+.desc{
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+.activities:hover{
+    background: #decabd72;
+    color: #503349;
+    border-radius: 16px;
+    border: transparent;
+}
+
+
+.contact-us{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.contact-us h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.contact-col p{
+    color: #333;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-col{
+    flex-basis: 31%;
+    background: #d7e4e4;
+    border-radius: 16px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 00.5s;
+}
+.contact-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+.contact-col .row{
+    padding: 0 7rem;
+}
+.contact-col .row .bi{
+    margin: 6px;
+    color: #b04c63;
+    font-size: 18px;
+}
+.contact-icon{
+    color: #b04c63;
+}
+.footer{
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    padding: 30px 0;
+    background: #503349;
+}
+.footer-abt{
+    color: #fff;
+    font-size: 16px;
+}
+
+
+
+
+
+@media(max-width: 786px) {
+    .activities img{
+        width: 80%;
+    }
+}
