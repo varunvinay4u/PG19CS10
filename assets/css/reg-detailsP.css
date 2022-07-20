@@ -10,13 +10,12 @@
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  background-color: #e98cd2;
+  background: linear-gradient(120deg, #b04c63, #b27069, #b04c63);
 }
 
 h1 {
   color: rgb(0, 0, 0);
   font-family: "Oswald", sans-serif;
-  margin: 20px 0;
   text-align: center;
 }
 
@@ -28,7 +27,10 @@ h1 {
   color: rgb(0, 0, 0);
   font-size: 18px;
   font-family: sans-serif;
-  background-color: #5fdaff;
+  margin-top: 25px;
+  background-color: #decabd;
+  border-radius: 16px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   padding: 20px;
 }
 
@@ -37,14 +39,15 @@ h1 {
 .registartion-form textarea {
   border: none;
   padding: 5px;
-  margin-top: 10px;
+  margin: 5px 0;
   font-family: sans-serif;
+  border-radius: 3px;
 }
 
 .registartion-form input:focus,
 .registartion-form textarea:focus {
   outline: none;
-  box-shadow: 0 0 10px rgb(178, 139, 139), 0 0 10px rgb(224, 52, 52);
+  box-shadow: rgba(0, 0, 0, 0.36) 0px 3px 13px;
 }
 
 .registartion-form .submit {
@@ -52,12 +55,12 @@ h1 {
   padding: 8px 0;
   font-size: 20px;
   font-weight: 600;
-  color: #333;
-  background-color: #fff;
+  color: #fff;
+  margin: 30px 0;
+  background-color: #503349;
   border-radius: 5px;
 }
 
 .registartion-form .submit:hover {
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
-
