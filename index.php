@@ -112,7 +112,7 @@ session_start();
         <div class="row">
             <div class="features-col features-btn">
                 <a href="assets/meditation.html" style="text-decoration: none;">
-                    <img src="/assets/images/meditation_timer.png" alt="">
+                    <img src="assets/images/meditation_timer.png" alt="">
                     <div class="layer">
                         <h3>Meditation <i class="bi bi-stopwatch"></i></h3>
                     </div>
@@ -139,8 +139,8 @@ session_start();
             </div>
              
             <div class="features-col features-btn">
-                <a href="#" style="text-decoration: none;">
-                    <img src="/assets/images/meditation_activities.png" alt="">
+                <a href="assets/relaxationactivity.html" style="text-decoration: none;">
+                    <img src="assets/images/meditation_activities.png" alt="">
                     <div class="layer">
                         <h3>Relaxation <i class="bi bi-emoji-smile"></i></h3>
                     </div>
