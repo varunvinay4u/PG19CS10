@@ -20,7 +20,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorum quae harum atque non, obcaecati aperiam labore. Vitae, ipsum fugiat facere ex, aliquid ipsam dolorem mollitia quod totam, debitis earum.</p>
                     </div>
                 </div>
-             <div class="col">
+                <div class="col">
                     <div class="form-data">
                         <div class="form-head">
                             <h2>Book Appoinment</h2>
@@ -28,68 +28,58 @@
                      <form method="post" name="appointment" class="appointment" onsubmit="return formValidation()">
                        <table>
                         <div class="form-body">
-                            <div class="row form-row">
-                                <input type="text" placeholder="Enter Full Name" id="name" class="form-control">
-                            </div>
-                            <div class="row form-row">
-                                <input type="number" placeholder="Enter Mobile Number" id="phoneNumber" class="form-control">
-                            </div>
-                            <div class="row form-row" aria-required="true">
-                                <input type="email" placeholder="Enter Email Address" id="email" class="form-control">
-                            </div>
-                            <div class="row form-row">
-                                <input type="date" placeholder="Appoinment Date" id="date" class="form-control" style="color: rgb(91, 91, 91);">
-                            </div>
+                            <tr>
+                                <td><input type="text" placeholder="Enter Full Name" id="name" class="form-control"></td>
+                            </tr>
+                            <tr class="row form-row">
+                                <td><input type="number" placeholder="Enter Mobile Number" id="phoneNumber" class="form-control"></td>
+                            </tr>
+                            <tr aria-required="true">
+                                <td><input type="email" placeholder="Enter Email Address" id="email" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="date" placeholder="Appoinment Date" id="date" class="form-control" style="color: rgb(91, 91, 91);"></td>
+                            </tr>
                             <h6>Address Details</h6>
-                            <div class="row form-row">
-                                <div class="col-sm-6">
-                                    <div class="row form-row">
+                            <tr>
+                                    <td class="row form-row">
                                         <input type="text" placeholder="Enter Area" id="area" class="form-control" id="locality">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="row form-row">
+                                    </td>
+                                    <td class="row form-row">
                                         <input type="text" placeholder="Enter City" id="city" class="form-control" id="city">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row form-row">
-                                <div class="col-sm-6">
-                                    <div class="row form-row">
+                                    </td>
+                            </tr>
+                            <tr>
+                                    <td class="row form-row">
                                         <input type="text" placeholder="Enter State" id="state" class="form-control" id="state">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="row form-row">
+                                    </td>
+                                    <td class="row form-row">
                                         <input type="number" placeholder="Postal Code" id="zipcode" class="form-control" id="pin">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row form-row">
-                                <div class="col-sm-6">
-                                    <div class="row form-row">
+                                    </td>
+                            </tr>
+                            <tr>
+                                    <td class="row form-row">
                                         <input type="text" placeholder="Enter Country" id="country" class="form-control" id="country">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="row form-row">
+                                    </td>
+                                    <td class="row form-row">
                                         <button class="findLocat">Use current Location</button>
-                                    </div>
-                                </div>
-                            </div>
+                                    </td>
+                            </tr>
                            
-                            <div class="row form-row">
-                                <a href="thankyou.html">
-                                <button class="btn btn-success btn-appoinment">
-                                    Submit
-                                </button>
-                                </a>
-                            </div>
+                            <tr class="row form-row">
+                                <td colspan="2">
+                                    <a href="thankyou.html">
+                                    <button class="btn btn-success btn-appoinment">
+                                        Submit
+                                    </button>
+                                    </a>
+                                </td>
+                            </tr>
                         </div>
                       </table>
                      </form>
                     </div>
-             </div>
+                </div>
             </div>
         </div>
     </div>
