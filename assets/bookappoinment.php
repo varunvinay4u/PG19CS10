@@ -20,53 +20,55 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorum quae harum atque non, obcaecati aperiam labore. Vitae, ipsum fugiat facere ex, aliquid ipsam dolorem mollitia quod totam, debitis earum.</p>
                     </div>
                 </div>
-                <div class="col">
+             <div class="col">
                     <div class="form-data">
                         <div class="form-head">
                             <h2>Book Appoinment</h2>
                         </div>
+                     <form method="post" name="appointment" class="appointment" onsubmit="return formValidation()">
+                       <table>
                         <div class="form-body">
                             <div class="row form-row">
-                                <input type="text" placeholder="Enter Full Name" class="form-control">
+                                <input type="text" placeholder="Enter Full Name" id="name" class="form-control">
                             </div>
                             <div class="row form-row">
-                                <input type="number" placeholder="Enter Mobile Number" class="form-control">
+                                <input type="number" placeholder="Enter Mobile Number" id="phoneNumber" class="form-control">
                             </div>
                             <div class="row form-row" aria-required="true">
-                                <input type="email" placeholder="Enter Email Address" class="form-control">
+                                <input type="email" placeholder="Enter Email Address" id="email" class="form-control">
                             </div>
                             <div class="row form-row">
-                                <input type="date" placeholder="Appoinment Date" class="form-control" style="color: rgb(91, 91, 91);">
+                                <input type="date" placeholder="Appoinment Date" id="date" class="form-control" style="color: rgb(91, 91, 91);">
                             </div>
                             <h6>Address Details</h6>
                             <div class="row form-row">
                                 <div class="col-sm-6">
                                     <div class="row form-row">
-                                        <input type="text" placeholder="Enter Area" class="form-control" id="locality">
+                                        <input type="text" placeholder="Enter Area" id="area" class="form-control" id="locality">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="row form-row">
-                                        <input type="text" placeholder="Enter City" class="form-control" id="city">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row form-row">
-                                <div class="col-sm-6">
-                                    <div class="row form-row">
-                                        <input type="text" placeholder="Enter State" class="form-control" id="state">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="row form-row">
-                                        <input type="number" placeholder="Postal Code" class="form-control" id="pin">
+                                        <input type="text" placeholder="Enter City" id="city" class="form-control" id="city">
                                     </div>
                                 </div>
                             </div>
                             <div class="row form-row">
                                 <div class="col-sm-6">
                                     <div class="row form-row">
-                                        <input type="text" placeholder="Enter Country" class="form-control" id="country">
+                                        <input type="text" placeholder="Enter State" id="state" class="form-control" id="state">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="row form-row">
+                                        <input type="number" placeholder="Postal Code" id="zipcode" class="form-control" id="pin">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row form-row">
+                                <div class="col-sm-6">
+                                    <div class="row form-row">
+                                        <input type="text" placeholder="Enter Country" id="country" class="form-control" id="country">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
@@ -84,8 +86,10 @@
                                 </a>
                             </div>
                         </div>
+                      </table>
+                     </form>
                     </div>
-                </div>
+             </div>
             </div>
         </div>
     </div>
@@ -100,3 +104,63 @@
 
 </body>
 </html>
+
+
+
+<?php
+
+
+session_start();
+
+	include("connection.php");
+	include("functions.php");
+
+
+	
+if($_SERVER['REQUEST_METHOD'] == "POST")
+
+	{
+		//something was posted
+		$name =$_POST['name'];
+	//	$password = $_POST['password'];
+   	//$category=$_POST['category'];
+		$email=$_POST['email'];
+		$phoneNumber=$_POST['phoneNumber'];
+		$date=$_POST['date'];
+		$zipcode=$_POST['zipcode'];
+		$location=$_POST['area'];
+        $location=$_POST['city'];
+        $location=$_POST['state'];
+        $location=$_POST['country'];
+		$time=$_POST['time'];
+		$Doctor=$_POST['Doctor'];
+
+		#if(!empty($email) && !empty($password))
+		#{
+
+			//save to database
+			$bookingID = random_num(20);
+			$sql = "insert into appointments values ('','$name',$phoneNumber,'$email',$date, ,' ','$area','$city','$state',$zipcode,'$country',$bookingID)";
+        //check if $category works in insert or not !!NOT
+			
+			if ($con->query($sql) === TRUE) {
+  echo "New record created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . $con->error;
+}
+
+
+
+#mysqli_query($con, $query);
+			#echo "$name, $gender";
+			header("Location: login.php");
+			die;
+		#}else
+		#{
+		#	echo "Please enter some valid information!";
+		#}
+	}
+
+
+
+?>
