@@ -10,10 +10,10 @@ const findLoc=()=>{
         .then(data=> {
           console.log(data)
           table.getElementById('state').value = data.principalSubdivision
-          table.getElementById('area').value = data.locality
+          table.getElementById('locality').value = data.locality
           table.getElementById('country').value = data.countryName
           table.getElementById('city').value = data.city
-          table.getElementById('zipcode').value = data.postcode 
+          table.getElementById('pin').value = data.postcode 
             
   
         })
