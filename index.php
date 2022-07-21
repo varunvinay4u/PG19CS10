@@ -207,6 +207,10 @@ session_start();
 
     <section class="footer">
         <section id="contact" class="contact-us">
+            <h1>Contact Us</h1>
+            <span class="heading-underline solid">
+                <span></span>
+            </span>
             <p class="footer-abt">feel free to contact us if you have any queries or issues!! <br> We are here to help you 24/7</p>
             <div class="row">
                 <div class="contact-col">
