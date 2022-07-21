@@ -32,7 +32,7 @@
                                 <td><input type="text" placeholder="Enter Full Name" id="name" class="form-control"></td>
                             </tr>
                             <tr class="row form-row">
-                                <td><input type="numbers" placeholder="Enter Mobile Number" id="phoneNumber" class="form-control"></td>
+                                <td><input type="number" placeholder="Enter Mobile Number" id="phoneNumber" class="form-control"></td>
                             </tr>
                             <tr aria-required="true">
                                 <td><input type="email" placeholder="Enter Email Address" id="email" class="form-control"></td>
@@ -61,17 +61,15 @@
                                     <td class="row form-row">
                                         <input type="text" placeholder="Enter Country" id="country" class="form-control" id="country">
                                     </td>
-                                    <td class="row form-row">
+                                    <div class="row form-row">
                                         <button class="findLocat">Use current Location</button>
-                                    </td>
+                                    </div>
                             </tr>
                            
                             <tr class="row form-row">
                                 <td colspan="2">
                                     <a href="thankyou.html">
-                                    <button class="btn btn-success btn-appoinment">
-                                        Submit
-                                    </button>
+                                        <input type="submit" class="submit" value="Register" />
                                     </a>
                                 </td>
                             </tr>
