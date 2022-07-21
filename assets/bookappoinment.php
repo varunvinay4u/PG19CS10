@@ -32,7 +32,7 @@
                                 <td><input type="text" placeholder="Enter Full Name" id="name" class="form-control"></td>
                             </tr>
                             <tr class="row form-row">
-                                <td><input type="number" placeholder="Enter Mobile Number" id="phoneNumber" class="form-control"></td>
+                                <td><input type="numbers" placeholder="Enter Mobile Number" id="phoneNumber" class="form-control"></td>
                             </tr>
                             <tr aria-required="true">
                                 <td><input type="email" placeholder="Enter Email Address" id="email" class="form-control"></td>
