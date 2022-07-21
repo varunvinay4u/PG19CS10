@@ -16,8 +16,8 @@
             <div class="row no-margin row-cols-1 row-cols-md-2">
                 <div class="col">
                     <div class="content">
-                        <h1>Book Your Time Slot Now and Save Your Time</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorum quae harum atque non, obcaecati aperiam labore. Vitae, ipsum fugiat facere ex, aliquid ipsam dolorem mollitia quod totam, debitis earum.</p>
+                        <h1>Thank you for choosing our MindBuddy service</h1>
+                        <p>Please fill up the details in the form given to the side of this to book your appointment</p>
                     </div>
                 </div>
                 <div class="col">
@@ -25,72 +25,67 @@
                         <div class="form-head">
                             <h2>Book Appoinment</h2>
                         </div>
-                     <form method="post" name="appointment" class="appointment" onsubmit="return formValidation()">
+                      <form method="post" name="appointment" class="appointment-form"> <!--onsubmit="return formValidation()"> -->
                        <table>
-                        <div class="form-body">
                             <tr>
-                                <td><input type="text" placeholder="Enter Full Name" id="name" class="form-control"></td>
-                            </tr>
-                            <tr class="row form-row">
-                                <td><input type="number" placeholder="Enter Mobile Number" id="phoneNumber" class="form-control"></td>
-                            </tr>
-                            <tr aria-required="true">
-                                <td><input type="email" placeholder="Enter Email Address" id="email" class="form-control"></td>
+                                <td><input type="text" placeholder="Enter Full Name" name="name" id="name" class="form-control"></td>
                             </tr>
                             <tr>
-                                <td><input type="date" placeholder="Appoinment Date" id="date" class="form-control" style="color: rgb(91, 91, 91);"></td>
+                                <td><input type="numbers" placeholder="Enter Mobile Number" name="phoneNumber" id="phoneNumber" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="email" placeholder="Enter Email Address" name="email" id="email" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="date" placeholder="Appoinment Date" name="date" id="date" class="form-control" style="color: rgb(91, 91, 91);"></td>
                             </tr>
                             <h6>Address Details</h6>
                             <tr>
-                                    <td class="row form-row">
-                                        <input type="text" placeholder="Enter Area" id="area" class="form-control" id="locality">
+                                    <td>
+                                        <input type="text" placeholder="Enter Area" name="area" id="area" class="form-control" id="locality">
                                     </td>
-                                    <td class="row form-row">
-                                        <input type="text" placeholder="Enter City" id="city" class="form-control" id="city">
-                                    </td>
-                            </tr>
-                            <tr>
-                                    <td class="row form-row">
-                                        <input type="text" placeholder="Enter State" id="state" class="form-control" id="state">
-                                    </td>
-                                    <td class="row form-row">
-                                        <input type="number" placeholder="Postal Code" id="zipcode" class="form-control" id="pin">
+                                    <td>
+                                        <input type="text" placeholder="Enter City" name="city" id="city" class="form-control" id="city">
                                     </td>
                             </tr>
                             <tr>
-                                    <td class="row form-row">
-                                        <input type="text" placeholder="Enter Country" id="country" class="form-control" id="country">
+                                    <td>
+                                        <input type="text" placeholder="Enter State" name="state" id="state" class="form-control" id="state">
                                     </td>
-                                    <div class="row form-row">
-                                        <button class="findLocat">Use current Location</button>
-                                    </div>
+                                    <td>
+                                        <input type="number" placeholder="Postal Code" name="zipcode" id="zipcode" class="form-control" id="pin">
+                                    </td>
+                            </tr>
+                            <tr>
+                                    <td>
+                                        <input type="text" placeholder="Enter Country" name="country" id="country" class="form-control" id="country">
+                                    </td>
+                                        
                             </tr>
                            
-                            <tr class="row form-row">
+                            <tr>
                                 <td colspan="2">
-                                    <a href="thankyou.html">
-                                        <input type="submit" class="submit" value="Register" />
-                                    </a>
+                                        <input type="submit" class="submit" value="Book Appointment" />
                                 </td>
                             </tr>
-                        </div>
                       </table>
                      </form>
+                     <button class="findLocat">Use current Location</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-
+</body>
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <script src="js/bookappointment.js"> </script>
+    <script src="js/bookappointment.js"> </script> 
 
-</body>
+
 </html>
 
 
@@ -114,21 +109,21 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
    	//$category=$_POST['category'];
 		$email=$_POST['email'];
 		$phoneNumber=$_POST['phoneNumber'];
-		$date=$_POST['date'];
+		$date=date('Y-m-d',strtotime($_POST['date']));
 		$zipcode=$_POST['zipcode'];
-		$location=$_POST['area'];
-        $location=$_POST['city'];
-        $location=$_POST['state'];
-        $location=$_POST['country'];
-		$time=$_POST['time'];
-		$Doctor=$_POST['Doctor'];
+		$area=$_POST['area'];
+        $city=$_POST['city'];
+        $state=$_POST['state'];
+        $country=$_POST['country'];
+		// $time=$_POST['time'];
+		// $Doctor=$_POST['Doctor'];
 
 		#if(!empty($email) && !empty($password))
 		#{
 
 			//save to database
 			$bookingID = random_num(20);
-			$sql = "insert into appointments values ('','$name',$phoneNumber,'$email',$date, ,' ','$area','$city','$state',$zipcode,'$country',$bookingID)";
+			$sql = "insert into appointments values ('','$name',$phoneNumber,'$email','$date','$area','$city','$state',$zipcode,'$country',$bookingID)";
         //check if $category works in insert or not !!NOT
 			
 			if ($con->query($sql) === TRUE) {
