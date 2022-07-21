@@ -42,7 +42,7 @@
                             <h6>Address Details</h6>
                             <tr>
                                     <td>
-                                        <input type="text" placeholder="Enter Area" name="area" id="area" class="form-control" id="locality">
+                                        <input type="text" placeholder="Enter Area" name="locality" id="locality" class="form-control" id="locality">
                                     </td>
                                     <td>
                                         <input type="text" placeholder="Enter City" name="city" id="city" class="form-control" id="city">
@@ -53,7 +53,7 @@
                                         <input type="text" placeholder="Enter State" name="state" id="state" class="form-control" id="state">
                                     </td>
                                     <td>
-                                        <input type="number" placeholder="Postal Code" name="zipcode" id="zipcode" class="form-control" id="pin">
+                                        <input type="number" placeholder="Postal Code" name="pin" id="pin" class="form-control" id="pin">
                                     </td>
                             </tr>
                             <tr>
