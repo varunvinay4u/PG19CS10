@@ -363,18 +363,19 @@ nav ul li a {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 90px;
 }
 .contact-us h1{
-    font-size: 36px;
+    font-size: 39px;
     font-weight: 600;
+    color: #fff;
 }
 
 .heading-underline span{
     display: inline-flex;
     width: 120px;
     height: 3px;
-    background-color: #22424c;
+    background-color: #999092;
 }
 h3{
     margin: 10px;
@@ -419,13 +420,14 @@ p{
 .footer{
     width: 100%;
     text-align: center;
-    padding: 30px 0;
+    padding: 11px 0;
     background: #503349;
 }
 
 .footer-abt{
     color: #fff;
-    font-size: 16px;
+    font-size: 13px;
+    margin-top: 13px;
 }
 
 
