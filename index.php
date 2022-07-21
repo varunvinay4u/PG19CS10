@@ -63,7 +63,7 @@ session_start();
 		
             <h1>MindBuddy : Your Mental Health Partner</h1>
             <p>Don't Worry, We're Here to Help You</p> <br>
-            <a href="assets/bookappoinment.html" class="hero-btn btn-main">Book Appoinment</a>
+            <a href="assets/bookappoinment.php" class="hero-btn btn-main">Book Appoinment</a>
         </div>
     </div>
 	
