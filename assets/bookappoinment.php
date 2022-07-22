@@ -25,7 +25,7 @@
                         <div class="form-head">
                             <h2>Book Appoinment</h2>
                         </div>
-                      <form method="post" name="appointment" class="appointment-form"> <!--onsubmit="return formValidation()"> -->
+                      <form method="post" name="appointment" class="appointment-form" action="thankyou.html"> <!--onsubmit="return formValidation()"> -->
                        <table>
                             <tr>
                                 <td><input type="text" placeholder="Enter Full Name" name="name" id="name" class="form-control"></td>
@@ -136,7 +136,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
 
 #mysqli_query($con, $query);
 			#echo "$name, $gender";
-			header("Location: login.php");
+			header("Location: thankyou.html");
 			die;
 		#}else
 		#{
