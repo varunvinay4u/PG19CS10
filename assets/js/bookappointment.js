@@ -9,19 +9,19 @@ const findLoc=()=>{
         .then(res=>res.json())
         .then(data=> {
           console.log(data)
-          table.getElementById('state').value = data.principalSubdivision
-          table.getElementById('locality').value = data.locality
-          table.getElementById('country').value = data.countryName
-          table.getElementById('city').value = data.city
-          table.getElementById('pin').value = data.postcode 
+          document.getElementById('state').value = data.principalSubdivision
+          document.getElementById('locality').value = data.locality
+          document.getElementById('country').value = data.countryName
+          document.getElementById('city').value = data.city
+          document.getElementById('pin').value = data.postcode 
             
   
         })
    }
-  
-      const error= () => {
-        status.textContent = 'Unable to retrieve your location';
-      }
+   
+       const error= () => {
+         status.textContent = "Unable to retrieve your location";
+       }
     navigator.geolocation.getCurrentPosition(success,error);
   }
   
