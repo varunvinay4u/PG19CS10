@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
-    <link rel="stylesheet" href="css/bookappoinment.css">
+    <!-- <link rel="stylesheet" href="css/bookappoinment.css">  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
@@ -17,7 +17,7 @@
                 <div class="col">
                     <div class="content">
                         <h1>Thank you for choosing our MindBuddy service</h1>
-                        <p>Please fill up the details in the form given to the side of this to book your appointment</p>
+                        <p>Please fill up the details in the form given to the side of this to book your appointment...</p>
                     </div>
                 </div>
                 <div class="col">
@@ -25,7 +25,7 @@
                         <div class="form-head">
                             <h2>Book Appoinment</h2>
                         </div>
-                      <form method="post" name="appointment" class="appointment-form"> <!--onsubmit="return formValidation()"> -->
+                      <form method="post" name="appointment" class="appointment-form" > <!--action="thankyou.html"> <!-- onsubmit="return formValidation()"> -->
                        <table>
                             <tr>
                                 <td><input type="text" placeholder="Enter Full Name" name="name" id="name" class="form-control"></td>
@@ -65,17 +65,20 @@
                            
                             <tr>
                                 <td colspan="2">
-                                        <input type="submit" class="submit" value="Book Appointment" />
+                                        <input type="submit" class="submit" value="BookAppointment" />
                                 </td>
                             </tr>
+
                       </table>
                      </form>
-                     <button class="findLocat">Use current Location</button>
+
                     </div>
+ 
                 </div>
             </div>
         </div>
     </div>
+    <button class="findLocat" > Use Current Location </button>  
 
 </body>
 
@@ -88,7 +91,7 @@
 
 </html>
 
-
+ 
 
 <?php
 
@@ -110,8 +113,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
 		$email=$_POST['email'];
 		$phoneNumber=$_POST['phoneNumber'];
 		$date=date('Y-m-d',strtotime($_POST['date']));
-		$zipcode=$_POST['zipcode'];
-		$area=$_POST['area'];
+		$zipcode=$_POST['pin'];
+		$area=$_POST['locality'];
         $city=$_POST['city'];
         $state=$_POST['state'];
         $country=$_POST['country'];
@@ -135,9 +138,9 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
 
 
 #mysqli_query($con, $query);
-			#echo "$name, $gender";
-			header("Location: login.php");
-			die;
+			echo "$name, $state";
+			#header("Location: thankyou.html");
+			#die;
 		#}else
 		#{
 		#	echo "Please enter some valid information!";
