@@ -1,0 +1,81 @@
+* {box-sizing: border-box;}
+.card-header * {list-style-type: none;}
+
+.required:after{
+    content:"*";
+    font-weight:bold;
+    color: red;
+    margin-left: 5px;
+}
+
+.card-header {
+    padding: 50px 25px;
+    width: 100%;
+}
+
+.card-header ul {
+    margin: 0;
+    padding: 0;
+}
+
+.card-header ul li {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.days {
+    padding: 10px 0;
+}
+
+.badge1 {
+    position:relative;
+}
+.badge1[data-badge]:after {
+    content: attr(data-badge);
+    position: absolute;
+    top: -0.5px;
+    right: -0.5px;
+    font-size: .7em;
+    background: red;
+    color: white;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 50%;
+    box-shadow: 0 0 1px #333;
+}
+
+@media screen and (max-width:720px) {
+
+    .weekdays td,
+    .days td {
+        width: 13.1%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .weekdays td,
+    .days td {
+        width: 12.5%;
+    }
+
+    .days td .active {
+        padding: 2px;
+    }
+}
+
+@media screen and (max-width: 290px) {
+
+    .weekdays td,
+    .days td {
+        width: 12.2%;
+    }
+}
