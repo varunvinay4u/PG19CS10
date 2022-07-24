@@ -33,13 +33,26 @@ session_start();
 		
 
 while($db_category_name  = mysqli_fetch_array($result)) {
-    $a[$i]= $db_category_name["name"].'<br>';
+    $a[$i]= $db_category_name["name"].', '; 
+    $b[$i]= $db_category_name["doc_qualification"].'<br>';
 	  $i++;
 } ?>
     <!-- for (let i = 0; i < 3; i++) { -->
-      <li> <?php print $a[0]; ?> </li>
-      <li><?php print $a[1]; ?></li>
-      <li><?php print $a[2]; ?></li>
+      <script> 
+      const num = <?php print $i; ?> ; 
+
+      console.log(num);
+      <?php
+      for ($v = 0; $v < $i; $v++) {
+       print $a[$v];
+       print $b[$v].'<br>'; 
+      }
+      ?>
+      </script>
+
+      <li> <?php print $a[0]; print $b[0]; ?></li>
+      <li><?php print $a[1]; print $b[1]; ?></li>
+      <li><?php print $a[2]; print $b[2]; ?></li>
     </ul>
   </div>
 </div>
