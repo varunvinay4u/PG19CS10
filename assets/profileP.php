@@ -18,9 +18,9 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MindBuddy</title>
+    <title>Profile Settings</title>
     <link rel="stylesheet" href="css/profileP.css">
-    <link rel="icon" type="image/png" href="images/logo_temp.png">
+    <link rel="icon" type="image/png" href="images/user-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
@@ -97,25 +97,37 @@ session_start();
                     
                         <form>
                             <div class="form-group">
-                                <label for=fullName>Full Name</label>
+                                <label for=fullName>Full Name :-</label>
                                 <input type="text" class="form-control" id="fullName">
                             </div>
+                            <div class="form-group ">
+                                <label for=category>Gender :-</label> <br>
+                                <div class="form-control">
+                                    Male:<input type="radio"name="gender" value="male" id="gender">
+                                    Female:<input type="radio"name="gender" value="female" id="gender">
+                                    Other:<input type="radio"name="gender" value="other" id="gender">
+                                </div>
+                            </div>
                             <div class="form-group">
-                                <label for=email>Email</label>
+                                <label for=email>Email :-</label>
                                 <input type="email" class="form-control" id="email">
                             </div>
                             <div class="form-group">
 
-                                <label for=pass>Phone No :</label>
+                                <label for=pass>Phone No :-</label>
                                 <input type="number" class="form-control" id="number">
                             </div>
                             <div class="form-group ">
-                                <label for=category>Gender</label>
-                                <input type="category" class="form-control" id="gender">
+                                <label for=birthday>Date of Birth :-</label>
+                                <input type="date" class="form-control" id="birthday">
                             </div>
                             <div class="form-group ">
-                                <label for=birthday>Birthday</label>
-                                <input type="date" class="form-control" id="birthday">
+                                <label for=birthday>Zip Code :-</label>
+                                <input type="number" class="form-control" id="zip">
+                            </div>
+                            <div class="form-group ">
+                                <label for=birthday>Place :-</label>
+                                <input type="text" class="form-control" id="loc">
                             </div>
 
 
