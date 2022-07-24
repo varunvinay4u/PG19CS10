@@ -90,7 +90,7 @@
                                         <input type="text" placeholder="Enter Country" name="country" id="country" class="form-control" id="country">
                                     </td>   
                             </tr>
-                           
+                            
                             <tr class="form-row row">
                                 <td colspan="2">
                                         <input type="submit" class="submit btn-appoinment" value="BookAppointment" onClick="myFunction()" />
