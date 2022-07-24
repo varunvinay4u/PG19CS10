@@ -10,11 +10,17 @@
 
     <style>
         .btn{
-            background: #236399 !important;
-            border: 1px solid #
+            background: #168fb3 !important;
+            border: 1px solid #236399 !important;
             text-decoration: none;
-            padding: 3px 145px;
-            margin-left: 27px;
+            padding: 3px 25px;
+            margin-left: 16.5rem;
+            margin-top: -16rem;
+            font-weight: 500;
+        }
+        .heading{
+            color: #333;
+            font-weight: 100;
         }
     </style>
 
@@ -48,27 +54,39 @@
                                 <td><input type="email" placeholder="Enter Email Address" name="email" id="email" class="form-control"></td>
                             </tr>
                             <tr class="form-row row">
+                                <th class="heading">Appointment Date :-</th>
                                 <td><input type="date" placeholder="Appoinment Date" name="date" id="date" class="form-control" style="color: rgb(91, 91, 91);"></td>
                             </tr>
-                            <h6>Address Details</h6>
                             <tr class="form-row row">
-                                    <td>
+                                <th class="heading">Start Time :-</th>
+                                <td class="col-sm-6">
+                                    <input type="time" placeholder="Start Time" name="stime" id="stime" class="form-control">
+                                </td>
+                                <th class="heading move" style="margin-top: -25px; margin-left: 10px;">End Time :-</th>
+                                <td class="col-sm-6 move">
+                                    <input type="time" placeholder="End Time" name="etime" id="etime" class="form-control">
+                                </td>
+                            </tr>
+
+                            <th>Address Details</th>
+                            <tr class="form-row row">
+                                    <td class="col-sm-6">
                                         <input type="text" placeholder="Enter Area" name="locality" id="locality" class="form-control" id="locality">
                                     </td>
-                                    <td>
+                                    <td class="col-sm-6">
                                         <input type="text" placeholder="Enter City" name="city" id="city" class="form-control" id="city">
                                     </td>
                             </tr>
                             <tr class="form-row row">
-                                    <td>
+                                    <td class="col-sm-6">
                                         <input type="text" placeholder="Enter State" name="state" id="state" class="form-control" id="state">
                                     </td>
-                                    <td>
+                                    <td class="col-sm-6">
                                         <input type="numbers" placeholder="Postal Code" name="pin" id="pin" class="form-control" id="pin">
                                     </td>
                             </tr>
                             <tr class="form-row row">
-                                    <td>
+                                    <td class="col-sm-6">
                                         <input type="text" placeholder="Enter Country" name="country" id="country" class="form-control" id="country">
                                     </td>   
                             </tr>
