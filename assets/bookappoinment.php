@@ -25,7 +25,7 @@
                         <div class="form-head">
                             <h2>Book Appoinment</h2>
                         </div>
-                      <form method="post" name="appointment" class="appointment-form"> <!--action="thankyou.html"> <!--onsubmit="return formValidation()"> -->
+                      <form method="post" name="appointment" class="appointment-form"> <!-- action="thankyou.html" onsubmit="return formValidation()"> -->
                        <table>
                             <tr>
                                 <td><input type="text" placeholder="Enter Full Name" name="name" id="name" class="form-control"></td>
@@ -78,7 +78,7 @@
             </div>
         </div>
     </div>
-    <button class="findLocat" > Use Current Location </button>  
+    <a class="findLocat btn" > Use Current Location </a>  
 
 </body>
 
