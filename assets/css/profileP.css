@@ -15,9 +15,11 @@ body {
     max-height: 200px;
     display: inline-block;
 }
-/* .file-upload {
-    display: none;
-} */
+.file-upload {
+    /* display: none; */
+    color: transparent;
+    /* margin-left: -73px; */
+}
 .circle {
     border-radius: 100% !important;
     overflow: hidden;
@@ -28,11 +30,11 @@ body {
 }
 img {
     max-width: 100%;
-    height: auto;
+    height: 100%;
 }
 .p-image {
     position: absolute;
-    top: 25rem;
+    top: 20rem;
     color: #666666;
     transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
 }
@@ -65,6 +67,10 @@ form .form-control,form .form-control:focus{
     border-color:transparent;
     border-bottom-color: #bebcc1;
     box-shadow:none;
+}
+
+.form-control input{
+    margin: 0 10px;
 }
 
 form .btn{ 
