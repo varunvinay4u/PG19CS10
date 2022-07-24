@@ -5,8 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
-    <!-- <link rel="stylesheet" href="css/bookappoinment.css">  -->
+    <link rel="stylesheet" href="css/bookappoinment.css"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        .btn{
+            background: #236399 !important;
+            border: 1px solid #
+            text-decoration: none;
+            padding: 3px 145px;
+            margin-left: 27px;
+        }
+    </style>
 
 </head>
 <body>
@@ -23,24 +33,25 @@
                 <div class="col">
                     <div class="form-data">
                         <div class="form-head">
-                            <h2>Book Appoinment</h2>
+                            <h2>Book Appointment</h2>
                         </div>
-                      <form method="post" name="appointment" class="appointment-form"> <!-- action="thankyou.html" onsubmit="return formValidation()"> -->
-                       <table>
-                            <tr>
+                        <div class="form-body">
+                            <form method="post" name="appointment" class="appointment-form"> <!-- action="thankyou.html" onsubmit="return formValidation()"> -->
+                            <table>
+                            <tr class="form-row row">
                                 <td><input type="text" placeholder="Enter Full Name" name="name" id="name" class="form-control"></td>
                             </tr>
-                            <tr>
+                            <tr class="form-row row">
                                 <td><input type="numbers" placeholder="Enter Mobile Number" name="phoneNumber" id="phoneNumber" class="form-control"></td>
                             </tr>
-                            <tr>
+                            <tr class="form-row row">
                                 <td><input type="email" placeholder="Enter Email Address" name="email" id="email" class="form-control"></td>
                             </tr>
-                            <tr>
+                            <tr class="form-row row">
                                 <td><input type="date" placeholder="Appoinment Date" name="date" id="date" class="form-control" style="color: rgb(91, 91, 91);"></td>
                             </tr>
                             <h6>Address Details</h6>
-                            <tr>
+                            <tr class="form-row row">
                                     <td>
                                         <input type="text" placeholder="Enter Area" name="locality" id="locality" class="form-control" id="locality">
                                     </td>
@@ -48,37 +59,35 @@
                                         <input type="text" placeholder="Enter City" name="city" id="city" class="form-control" id="city">
                                     </td>
                             </tr>
-                            <tr>
+                            <tr class="form-row row">
                                     <td>
                                         <input type="text" placeholder="Enter State" name="state" id="state" class="form-control" id="state">
                                     </td>
                                     <td>
-                                        <input type="number" placeholder="Postal Code" name="pin" id="pin" class="form-control" id="pin">
+                                        <input type="numbers" placeholder="Postal Code" name="pin" id="pin" class="form-control" id="pin">
                                     </td>
                             </tr>
-                            <tr>
+                            <tr class="form-row row">
                                     <td>
                                         <input type="text" placeholder="Enter Country" name="country" id="country" class="form-control" id="country">
-                                    </td>
-                                        
+                                    </td>   
                             </tr>
                            
-                            <tr>
+                            <tr class="form-row row">
                                 <td colspan="2">
-                                        <input type="submit" class="submit" value="BookAppointment" />
+                                        <input type="submit" class="submit btn-appoinment" value="BookAppointment" />
                                 </td>
                             </tr>
-
-                      </table>
-                     </form>
-
+                            </table>
+                            </form>
+                        </div>
+                        <a class="findLocat btn"> Use Current Location </a>  
                     </div>
- 
                 </div>
             </div>
         </div>
     </div>
-    <a class="findLocat btn" > Use Current Location </a>  
+    
 
 </body>
 
