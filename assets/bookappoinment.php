@@ -45,10 +45,10 @@
                             <form method="post" name="appointment" class="appointment-form"> <!-- action="thankyou.html" onsubmit="return formValidation()"> -->
                             <table>
                             <tr class="form-row row">
-                                <td><input type="text" placeholder="Enter Full Name" name="name" id="name" class="form-control"></td>
+                                <td><input type="text" placeholder="Enter Full Name" name="name" id="name" class="form-control" required></td>
                             </tr>
                             <tr class="form-row row">
-                                <td><input type="numbers" placeholder="Enter Mobile Number" name="phoneNumber" id="phoneNumber" class="form-control"></td>
+                                <td><input type="numbers" placeholder="Enter Mobile Number" name="phoneNumber" id="phoneNumber" class="form-control" required></td>
                             </tr>
                             <tr class="form-row row">
                                 <td><input type="email" placeholder="Enter Email Address" name="email" id="email" class="form-control"></td>
@@ -93,7 +93,7 @@
                            
                             <tr class="form-row row">
                                 <td colspan="2">
-                                        <input type="submit" class="submit btn-appoinment" value="BookAppointment" />
+                                        <input type="submit" class="submit btn-appoinment" value="BookAppointment" onClick="myFunction()" />
                                 </td>
                             </tr>
                             </table>
@@ -109,7 +109,17 @@
 
 </body>
 
-
+    <script>
+        function myFunction() {
+  let text;
+  if (confirm("Press a button!") == true) {
+    location.href = "dr-select.php";
+  } else {
+    text = "You canceled!";
+  }
+//   document.getElementById("demo").innerHTML = text;
+}
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
