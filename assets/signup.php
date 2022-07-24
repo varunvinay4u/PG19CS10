@@ -115,7 +115,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
 
 			//save to database
 			$user_id = random_num(20);
-			$sql = "insert into login values ('',$user_id,'$category','$name','$email','$password',$phoneNumber,'$gender',$zipcode,'$location','$Qualification','$DoctorRegistrationID')";
+			$sql = "insert into login values ('',$user_id,'doctor','$name','$email','$password',$phoneNumber,'$gender',$zipcode,'$location','$Qualification','$DoctorRegistrationID')";
         //check if $category works in insert or not !!NOT
 			
 			if ($con->query($sql) === TRUE) {
