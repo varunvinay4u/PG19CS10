@@ -26,7 +26,7 @@ session_start();
       <span class="custom-select__display__value">Choose one<span>
     </div>
     <ul class="custom-select__options" tabindex="-1" >
-      <?php $query = "select * from login where category = 'doctor'";
+      <?php $query = "select * from login where category = 'doctor'  and zipcode = (select pin from appointments ORDER BY SlNo DESC LIMIT 1)";
 		$i=0;
 		$result = mysqli_query($con,$query);
 		$num=mysqli_num_rows($result);
@@ -52,7 +52,6 @@ while($db_category_name  = mysqli_fetch_array($result)) {
 
       <li> <?php print $a[0]; print $b[0]; ?></li>
       <li><?php print $a[1]; print $b[1]; ?></li>
-      <li><?php print $a[2]; print $b[2]; ?></li>
     </ul>
   </div>
 </div>
