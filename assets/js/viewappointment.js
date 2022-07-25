@@ -117,136 +117,136 @@ nextButton.onclick = function changeMonthNext() {
    createCalendar(currentDate, "right");
 }
 
-function addEvent(title, desc) {
-   if (!globalEventObj[selectedDate.toDateString()]) {
-      globalEventObj[selectedDate.toDateString()] = {};
-   }
-   globalEventObj[selectedDate.toDateString()][title] = desc;
-}
+// function addEvent(title, desc) {
+//    if (!globalEventObj[selectedDate.toDateString()]) {
+//       globalEventObj[selectedDate.toDateString()] = {};
+//    }
+//    globalEventObj[selectedDate.toDateString()][title] = desc;
+// }
 
-function showEvents() {
-   let sidebarEvents = document.getElementById("sidebarEvents");
-   let objWithDate = globalEventObj[selectedDate.toDateString()];
+// function showEvents() {
+//    let sidebarEvents = document.getElementById("sidebarEvents");
+//    let objWithDate = globalEventObj[selectedDate.toDateString()];
 
-   sidebarEvents.innerHTML = "";
+//    sidebarEvents.innerHTML = "";
 
-   if (objWithDate) {
-      let eventsCount = 0;
-      for (key in globalEventObj[selectedDate.toDateString()]) {
-         let eventContainer = document.createElement("div");
-         eventContainer.className = "eventCard";
+//    if (objWithDate) {
+//       let eventsCount = 0;
+//       for (key in globalEventObj[selectedDate.toDateString()]) {
+//          let eventContainer = document.createElement("div");
+//          eventContainer.className = "eventCard";
 
-         let eventHeader = document.createElement("div");
-         eventHeader.className = "eventCard-header";
+//          let eventHeader = document.createElement("div");
+//          eventHeader.className = "eventCard-header";
 
-         let eventDescription = document.createElement("div");
-         eventDescription.className = "eventCard-description";
+//          let eventDescription = document.createElement("div");
+//          eventDescription.className = "eventCard-description";
 
-         eventHeader.appendChild(document.createTextNode(key));
-         eventContainer.appendChild(eventHeader);
+//          eventHeader.appendChild(document.createTextNode(key));
+//          eventContainer.appendChild(eventHeader);
 
-         eventDescription.appendChild(document.createTextNode(objWithDate[key]));
-         eventContainer.appendChild(eventDescription);
+//          eventDescription.appendChild(document.createTextNode(objWithDate[key]));
+//          eventContainer.appendChild(eventDescription);
 
-         let markWrapper = document.createElement("div");
-         markWrapper.className = "eventCard-mark-wrapper";
-         let mark = document.createElement("div");
-         mark.classList = "eventCard-mark";
-         markWrapper.appendChild(mark);
-         eventContainer.appendChild(markWrapper);
+//          let markWrapper = document.createElement("div");
+//          markWrapper.className = "eventCard-mark-wrapper";
+//          let mark = document.createElement("div");
+//          mark.classList = "eventCard-mark";
+//          markWrapper.appendChild(mark);
+//          eventContainer.appendChild(markWrapper);
 
-         sidebarEvents.appendChild(eventContainer);
+//          sidebarEvents.appendChild(eventContainer);
 
-         eventsCount++;
-      }
-      let emptyFormMessage = document.getElementById("emptyFormTitle");
-      emptyFormMessage.innerHTML = `${eventsCount} events now`;
-   } else {
-      let emptyMessage = document.createElement("div");
-      emptyMessage.className = "empty-message";
-      emptyMessage.innerHTML = "Sorry, no events to selected date";
-      sidebarEvents.appendChild(emptyMessage);
-      let emptyFormMessage = document.getElementById("emptyFormTitle");
-      emptyFormMessage.innerHTML = "No events now";
-   }
-}
+//          eventsCount++;
+//       }
+//       let emptyFormMessage = document.getElementById("emptyFormTitle");
+//       emptyFormMessage.innerHTML = `${eventsCount} events now`;
+//    } else {
+//       let emptyMessage = document.createElement("div");
+//       emptyMessage.className = "empty-message";
+//       emptyMessage.innerHTML = "Sorry, no events to selected date";
+//       sidebarEvents.appendChild(emptyMessage);
+//       let emptyFormMessage = document.getElementById("emptyFormTitle");
+//       emptyFormMessage.innerHTML = "No events now";
+//    }
+// }
 
-gridTable.onclick = function (e) {
+// gridTable.onclick = function (e) {
 
-   if (!e.target.classList.contains("col") || e.target.classList.contains("empty-day")) {
-      return;
-   }
+//    if (!e.target.classList.contains("col") || e.target.classList.contains("empty-day")) {
+//       return;
+//    }
 
-   if (selectedDayBlock) {
-      if (selectedDayBlock.classList.contains("blue") && selectedDayBlock.classList.contains("lighten-3")) {
-         selectedDayBlock.classList.remove("blue");
-         selectedDayBlock.classList.remove("lighten-3");
-      }
-   }
-   selectedDayBlock = e.target;
-   selectedDayBlock.classList.add("blue");
-   selectedDayBlock.classList.add("lighten-3");
+//    if (selectedDayBlock) {
+//       if (selectedDayBlock.classList.contains("blue") && selectedDayBlock.classList.contains("lighten-3")) {
+//          selectedDayBlock.classList.remove("blue");
+//          selectedDayBlock.classList.remove("lighten-3");
+//       }
+//    }
+//    selectedDayBlock = e.target;
+//    selectedDayBlock.classList.add("blue");
+//    selectedDayBlock.classList.add("lighten-3");
 
-   selectedDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), parseInt(e.target.innerHTML));
+//    selectedDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), parseInt(e.target.innerHTML));
 
-   showEvents();
+//    showEvents();
 
-   document.getElementById("eventDayName").innerHTML = selectedDate.toLocaleString("en-US", {
-      month: "long",
-      day: "numeric",
-      year: "numeric"
-   });
+//    document.getElementById("eventDayName").innerHTML = selectedDate.toLocaleString("en-US", {
+//       month: "long",
+//       day: "numeric",
+//       year: "numeric"
+//    });
 
-}
+// }
 
-var changeFormButton = document.getElementById("changeFormButton");
-var addForm = document.getElementById("addForm");
-changeFormButton.onclick = function (e) {
-   addForm.style.top = 0;
-}
+// var changeFormButton = document.getElementById("changeFormButton");
+// var addForm = document.getElementById("addForm");
+// changeFormButton.onclick = function (e) {
+//    addForm.style.top = 0;
+// }
 
-var cancelAdd = document.getElementById("cancelAdd");
-cancelAdd.onclick = function (e) {
-   addForm.style.top = "100%";
-   let inputs = addForm.getElementsByTagName("input");
-   for (let i = 0; i < inputs.length; i++) {
-      inputs[i].value = "";
-   }
-   let labels = addForm.getElementsByTagName("label");
-   for (let i = 0; i < labels.length; i++) {
-      labels[i].className = "";
-   }
-}
+// var cancelAdd = document.getElementById("cancelAdd");
+// cancelAdd.onclick = function (e) {
+//    addForm.style.top = "100%";
+//    let inputs = addForm.getElementsByTagName("input");
+//    for (let i = 0; i < inputs.length; i++) {
+//       inputs[i].value = "";
+//    }
+//    let labels = addForm.getElementsByTagName("label");
+//    for (let i = 0; i < labels.length; i++) {
+//       labels[i].className = "";
+//    }
+// }
 
-var addEventButton = document.getElementById("addEventButton");
-addEventButton.onclick = function (e) {
-   let title = document.getElementById("eventTitleInput").value.trim();
-   let desc = document.getElementById("eventDescInput").value.trim();
+// var addEventButton = document.getElementById("addEventButton");
+// addEventButton.onclick = function (e) {
+//    let title = document.getElementById("eventTitleInput").value.trim();
+//    let desc = document.getElementById("eventDescInput").value.trim();
 
-   if (!title || !desc) {
-      document.getElementById("eventTitleInput").value = "";
-      document.getElementById("eventDescInput").value = "";
-      let labels = addForm.getElementsByTagName("label");
-      for (let i = 0; i < labels.length; i++) {
-         labels[i].className = "";
-      }
-      return;
-   }
+//    if (!title || !desc) {
+//       document.getElementById("eventTitleInput").value = "";
+//       document.getElementById("eventDescInput").value = "";
+//       let labels = addForm.getElementsByTagName("label");
+//       for (let i = 0; i < labels.length; i++) {
+//          labels[i].className = "";
+//       }
+//       return;
+//    }
 
-   addEvent(title, desc);
-   showEvents();
+//    addEvent(title, desc);
+//    showEvents();
 
-   if (!selectedDayBlock.querySelector(".day-mark")) {
-      selectedDayBlock.appendChild(document.createElement("div")).className = "day-mark";
-   }
+//    if (!selectedDayBlock.querySelector(".day-mark")) {
+//       selectedDayBlock.appendChild(document.createElement("div")).className = "day-mark";
+//    }
 
-   let inputs = addForm.getElementsByTagName("input");
-   for (let i = 0; i < inputs.length; i++) {
-      inputs[i].value = "";
-   }
-   let labels = addForm.getElementsByTagName("label");
-   for (let i = 0; i < labels.length; i++) {
-      labels[i].className = "";
-   }
+//    let inputs = addForm.getElementsByTagName("input");
+//    for (let i = 0; i < inputs.length; i++) {
+//       inputs[i].value = "";
+//    }
+//    let labels = addForm.getElementsByTagName("label");
+//    for (let i = 0; i < labels.length; i++) {
+//       labels[i].className = "";
+//    }
 
-}
+// }

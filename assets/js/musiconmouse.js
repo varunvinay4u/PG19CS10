@@ -26,35 +26,35 @@ class Rect {
     this.h = ch / 7;
     this.x = x;
     this.y = y;
-    // audio
+    
     this.stop = true;
-    this.frequency = freq; // la frecuencia
-    this.waveform = "triangle"; // la forma de onda
-    this.dur = .75; // la duración en segundos
+    this.frequency = freq; 
+    this.waveform = "triangle";
+    this.dur = .75; 
     this.initialGain = .15;
   }
 
   play() {
-    // crea un nuevo oscillator
+    
     this.oscillator = audioCtx.createOscillator();
-    // crea un nuevo nodo de ganancia 
+   
     this.gain = audioCtx.createGain();
-    // establece el valor inicial del volumen del sonido 
+    
     this.gain.gain.value = this.initialGain;
-    // establece el tipo de oscillator  
+    
     this.oscillator.type = this.waveform;
-    // y el valor de la frecuencia 
+    
     this.oscillator.frequency.value = this.frequency;
-    // el volumen del sonido baja exponencialmente     
+   
     this.gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + this.dur);
-    // conecta el oscillator con el nodo de ganancia 
+    
     this.oscillator.connect(this.gain);
-    // y la ganancia con el dispositivo de destino
+    
     this.gain.connect(audioCtx.destination);
-    // inicia el oscillator 
+    
     this.oscillator.start(audioCtx.currentTime);
     this.stop = false;
-    // para el oscillator después de un tiempo (this.dur) 
+    
     this.oscillator.stop(audioCtx.currentTime + this.dur);
     this.oscillator.onended = () => this.stop = true;
   }
@@ -196,8 +196,8 @@ function grd() {
 
 function oMousePos(canvas, evt) {
   var ClientRect = canvas.getBoundingClientRect();
-  return { //objeto
+  return { 
     x: Math.round(evt.clientX - ClientRect.left),
     y: Math.round(evt.clientY - ClientRect.top) };
 
-} // JavaScript Document
+} 
