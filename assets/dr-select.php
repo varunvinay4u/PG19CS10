@@ -19,14 +19,8 @@ session_start();
 
 </head>
 <body>
-<div id="content">
-  <label id="label-select-application">Select Your Doctor</label>
-  <div class="custom-select">
-    <div class="custom-select__display">
-      <span class="custom-select__display__value">Choose one<span>
-    </div>
-    <ul class="custom-select__options" tabindex="-1" >
-      <?php $query = "select * from login where category = 'doctor'  and zipcode = (select pin from appointments ORDER BY SlNo DESC LIMIT 1)";
+
+<?php $query = "select * from login where category = 'doctor'  and zipcode = (select pin from appointments ORDER BY SlNo DESC LIMIT 1)";
 		$i=0;
 		$result = mysqli_query($con,$query);
 		$num=mysqli_num_rows($result);
@@ -37,25 +31,65 @@ while($db_category_name  = mysqli_fetch_array($result)) {
     $b[$i]= $db_category_name["doc_qualification"].'<br>';
 	  $i++;
 } ?>
+
+
+<form method="post" class="custom-select" name="appointment" >
+  <label id="label-select-application">Select Your Doctor</label>
+  <select name="Doctor">
+        <option value="" disabled selected>Choose option</option>
+        <option value="<?php print $a[0]; ?>"><?php print $a[0]; print $b[0]; ?></option>
+        <option value="<?php print $a[1]; ?>"><?php print $a[1]; print $b[1]; ?> </option>
+        <option value="Coconut">Coconut</option>
+        <option value="Blueberry">Blueberry</option>
+        <option value="Strawberry">Strawberry</option>
+    </select>
+    <a href="thankyou.html"> <input type="submit" name="submit" vlaue="Choose options"></a>
+      
     <!-- for (let i = 0; i < 3; i++) { -->
-      <script> 
-      const num = <?php print $i; ?> ; 
+      <!-- <script> 
+      const num = <?php #print $i; ?> ; 
 
       console.log(num);
       <?php
-      for ($v = 0; $v < $i; $v++) {
-       print $a[$v];
-       print $b[$v].'<br>'; 
-      }
+      #for ($v = 0; $v < $i; $v++) {
+       #print $a[$v];
+       #print $b[$v].'<br>'; 
+     # }
       ?>
       </script>
 
-      <li> <?php print $a[0]; print $b[0]; ?></li>
-      <li><?php print $a[1]; print $b[1]; ?></li>
+      <li> <select id="doctor" name="doctor"> <?php #print $a[0]; print $b[0]; ?> ></li>
+      <li> <select id="doctor" name="doctor"><?php #print $a[1]; print $b[1]; ?> ></li>
     </ul>
-  </div>
-</div>
+    </div>
+    <a href="new.html" type="submit" class="submit btn-appoinment" value="BookAppointment"  />
+    </form> -->
   <script  src="js/dr-select.js"></script>
  
 </body>
 </html>
+
+<?php
+
+#session_start();
+
+include("connection.php");
+//include("functions.php");
+
+    if(isset($_POST['submit'])){
+    if(!empty($_POST['Doctor'])) {
+        $selected = $_POST['Doctor'];
+        $sql = "update appointments set doctor = '$selected' where SlNo = (select SlNo from appointments ORDER BY SlNo DESC LIMIT 1)";
+        #echo 'You have chosen: ' . $selected;
+    } else {
+        echo 'Please select the value.';
+    }
+    if ($con->query($sql) === TRUE) {
+      #echo "New record created successfully";
+    } else {
+      #echo "Error: " . $sql . "<br>" . $con->error;
+    }
+    }
+?>
+
+
