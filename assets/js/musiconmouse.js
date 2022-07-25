@@ -26,7 +26,7 @@ class Rect {
     this.h = ch / 7;
     this.x = x;
     this.y = y;
-    // audio
+    
     this.stop = true;
     this.frequency = freq; // la frecuencia
     this.waveform = "triangle"; // la forma de onda
@@ -35,17 +35,17 @@ class Rect {
   }
 
   play() {
-    // crea un nuevo oscillator
+    
     this.oscillator = audioCtx.createOscillator();
-    // crea un nuevo nodo de ganancia 
+   
     this.gain = audioCtx.createGain();
-    // establece el valor inicial del volumen del sonido 
+    
     this.gain.gain.value = this.initialGain;
-    // establece el tipo de oscillator  
+    
     this.oscillator.type = this.waveform;
-    // y el valor de la frecuencia 
+    
     this.oscillator.frequency.value = this.frequency;
-    // el volumen del sonido baja exponencialmente     
+   
     this.gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + this.dur);
     // conecta el oscillator con el nodo de ganancia 
     this.oscillator.connect(this.gain);
@@ -200,4 +200,4 @@ function oMousePos(canvas, evt) {
     x: Math.round(evt.clientX - ClientRect.left),
     y: Math.round(evt.clientY - ClientRect.top) };
 
-} // JavaScript Document
+} 
