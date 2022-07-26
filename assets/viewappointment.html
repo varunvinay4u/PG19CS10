@@ -40,6 +40,9 @@
         <div class="sidebar-events" id="sidebarEvents">
           <div class="empty-message">Sorry, no events to selected date</div>
         </div>
+        <div class="empty-message">
+          <a href="#history" style="text-decoration: none; color: #fff;">Appointment History</a>
+          </div>
       </div>
       <div class="content-wrapper grey lighten-3">
         <div class="container">
@@ -111,6 +114,38 @@
         </div>
       </div>
 
+    </div>
+
+    <div id="history" onload="load()">
+      <div class="table-container" style="overflow-x: auto;">
+        <h1>Previouse Appointment History</h1>
+        <span class="heading-underline solid">
+            <span></span>
+        </span>
+        <table id="myTableData"  border="1" cellpadding="1">
+            <tr>
+                <th>&nbsp;</th>
+                <th>Full Name</th>
+                <th>Mobile Number</th>
+                <th>Email Address</th>
+                <th>Appointment Date</th>
+                <th>Appointment Place</th>
+                <th>Location</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>doctor1</td>
+                <td>1234567890</td>
+                <td>serdfgfghh@gggbhn.in</td>
+                <td>12/08/2022</td>
+                <td>lbs,college,povval</td>
+                <td>Cherkala</td>
+                <td>Approved</td>
+            </tr>
+        </table>
+        &nbsp;<br/>
+      </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
