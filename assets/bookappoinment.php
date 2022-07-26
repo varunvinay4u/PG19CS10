@@ -22,6 +22,11 @@
             color: #333;
             font-weight: 100;
         }
+        .confirm{
+            margin-bottom: -66px;
+            padding: 1px 157px;
+            margin-left: 55px;
+        }
     </style>
 
 </head>
@@ -94,8 +99,8 @@
                             
                             <tr class="form-row row">
                                 <td colspan="2">
-                                        <input type="submit" class="submit btn-appoinment" value="BookAppointment">
-                                          <!-- onclick="myFunction()" > -->
+                                        <input type="submit" class="submit btn-appoinment" value="BookAppointment" >
+                                        <!-- onclick="myFunction()" > -->
                                 </td>
                             </tr>
                             </table>
@@ -103,7 +108,7 @@
                         </div>
                         <a class="findLocat btn"> Use Current Location </a>  
                     </div>
-                    <a href="dr-select.php" class="confirm btn">Confirm Booking </a>
+                    <button href="dr-select.php" id="confirm" class="confirm btn">Confirm Booking </button>
                 </div>
             </div>
         </div>
@@ -112,17 +117,26 @@
 
 </body>
 
-    <!-- <script>
-        function myFunction() {
-  let text;
-  if (confirm("Press a button!") == true) {
-    location.href = "dr-select.php";
-  } else {
-    text = "You canceled!";
-  }
-//   document.getElementById("demo").innerHTML = text;
-}
-    </script> -->
+    <script>
+        // function myFunction() {
+        //     document.getElementById("confirm").disabled = false;
+        // }
+        
+        let input = document.querySelector(".btn-appoinment");
+        let button = document.querySelector(".confirm");
+
+        button.disabled = true;
+        input.addEventListener("change", stateHandle);
+
+        function stateHandle() {
+	    if (document.querySelector(".btn-appoinment").value === "") {
+		    button.disabled = true;
+	    } else {
+		    button.disabled = false;
+	    }
+    }
+
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
