@@ -40,7 +40,7 @@ const findLoc=()=>{
  const zipcode = document.getElementById("pin");
  
 // // function for form varification
-  function formValidation() {
+  // function formValidation() {
 //    // checking length of name
 //    if (userName.value.length < 2 || userName.value.length > 20) {
 //      alert("Name length should be more than 2 and less than 21 charaters");
@@ -94,4 +94,4 @@ const findLoc=()=>{
 //      return false;
 //    }
 //    return true;
-  }
+  // }
