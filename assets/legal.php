@@ -46,8 +46,9 @@
 
  When you sign-up for an Account, You automatically accept the below provisions which constitute the Mind Buddy Terms and Conditions and You are legally bound by them. 
 Read this document very carefully and together with our Website Terms and Conditions, Mind Buddy Privacy Policy and Data Processing Agreement.
-    If you are an Enterprise Client, you accept the provisions herein and any additional documentation tailored to your needs. Get in contact with us to find out more.
-    
+If you are an Enterprise Client, you accept the provisions herein and any additional documentation tailored to your needs. Get in contact with us to find out more.
+If you are rescheduling or cancelling an appointment, you are required to do it before 5 hrs from the scheduled time.
+The user agrees, acknowledges and undertakes all the terms and conditions mentioned above
     </p> <br><br>
     <div onload="disableSubmit()">
       <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)">  I Agree Terms & Coditions <br><br>
