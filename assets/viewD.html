@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+    <title>View Appointment</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap-grid.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/viewappointment.css">
+
+  </head>
+
+  <body>
+
+    <div class="mobile-header z-depth-1">
+
+      <div class="row">
+        <div class="col-2">
+          <a href="#" data-activates="sidebar" class="button-collapse">
+            <i class="material-icons">menu</i>
+          </a>
+        </div>
+        <div class="col">
+          <h4>Events</h4>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="main-wrapper">
+      <div class="sidebar-wrapper z-depth-2 side-nav fixed" id="sidebar">
+        <div class="sidebar-title">
+          <h4>Events</h4>
+          <h5 id="eventDayName">Date</h5>
+        </div>
+        <div class="sidebar-events" id="sidebarEvents">
+          <div class="empty-message">Sorry, no events to selected date</div>
+        </div>
+        <div class="empty-message">
+          <a href="#history" style="text-decoration: none; color: #fff;">Appointment History</a>
+          </div>
+      </div>
+      <div class="content-wrapper grey lighten-3">
+        <div class="container">
+          <div class="calendar-wrapper z-depth-2">
+            <div class="header-background" style="background: url(images/istockphoto-1283822563-170667a.jpg); height: 240px;">
+              <div class="calendar-header">
+                <a class="prev-button" id="prev"><i class="material-icons">keyboard_arrow_left</i></a>
+                <a class="next-button" id="next"><i class="material-icons">keyboard_arrow_right</i></a>
+                <div class="row header-title">
+                  <div class="header-text">
+                    <h3 id="month-name">February</h3>
+                    <h5 id="todayDayName">Today is Friday 7 Feb</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="calendar-content">
+              <div id="calendar-table" class="calendar-cells">
+
+                <div id="table-header">
+                  <div class="row">
+                    <div class="col">Mon</div>
+                    <div class="col">Tue</div>
+                    <div class="col">Wed</div>
+                    <div class="col">Thu</div>
+                    <div class="col">Fri</div>
+                    <div class="col">Sat</div>
+                    <div class="col">Sun</div>
+                  </div>
+                </div>
+
+                <div id="table-body" class="">
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="calendar-footer">
+              <div class="emptyForm" id="emptyForm">
+                <h4 id="emptyFormTitle">No Appointments now</h4>
+                <a class="addEvent" id="changeFormButton" href="bookappointment.php">Book New</a>
+              </div>
+              <!-- <div class="addForm" id="addForm">
+                <h4>Book New Appointment</h4>
+
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input id="eventTitleInput" type="text" class="validate">
+                    <label for="eventTitleInput">Title</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="eventDescInput" type="text" class="validate">
+                    <label for="eventDescInput">Description</label>
+                  </div>
+                </div>
+
+                <div class="addEventButtons">
+                  <a class="waves-effect waves-light btn blue lighten-2" id="addEventButton">Add</a>
+                  <a class="waves-effect waves-light btn grey lighten-2" id="cancelAdd">Cancel</a>
+                </div>
+
+              </div> -->
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div id="history" onload="load()">
+      <div class="table-container" style="overflow-x: auto;">
+        <div>
+            <h1 style="margin-right: 61px;">Appointments</h1>
+            <span class="heading-underline solid">
+                <span></span>
+            </span>
+        </div>
+        <div class="form-group">
+            <button style="position: absolute; right: 16px; top: 69rem;" type="button" class="btn btn-danger btn-block" id="btn_clear_storage" onclick="clear_storage()">Delete Appointments</button>
+        </div>
+        <table id="myTableData"  border="1" cellpadding="1">
+            <tr>
+                <th scope="col">&nbsp;</th>
+                <th scope="col">Full Name</th>
+                <th scope="col">Mobile Number</th>
+                <th scope="col">Email Address</th>
+                <th scope="col">Appointment Date</th>
+                <th scope="col">Start Time</th>
+                <th scope="col">End Time</th>
+                <th scope="col">Appointment Place</th>
+                <th scope="col">Action</th>
+            </tr>
+            <!-- <tr>
+                <td>1</td>
+                <td>doctor1</td>
+                <td>1234567890</td>
+                <td>serdfgfghh@gggbhn.in</td>
+                <td>12/08/2022</td>
+                <td>lbs,college,povval</td>
+                <td>Cherkala</td>
+                <td>Approved</td>
+            </tr> -->
+        </table>
+        &nbsp;<br/>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script>$(".button-collapse").sideNav();</script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script  src="js/viewD.js"></script>
+
+</body>
+</html>
