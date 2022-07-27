@@ -44,8 +44,8 @@
       OVERVIEW
       This is a legally binding document governing the provision of the Mind Buddy our website.
 
- When you sign-up for an Account, You automatically accept the below provisions which constitute the Mind Buddy Terms and Conditions and You are legally bound by them. 
-</p> <br><br>
+      When you sign-up for an Account, You automatically accept the below provisions which constitute the Mind Buddy Terms and Conditions and You are legally bound by them. 
+    </p> <br><br>
     <div onload="disableSubmit()">
       <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)">  I Agree Terms & Coditions <br><br>
       <input type="submit" name="submit" id="submit">
