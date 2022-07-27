@@ -43,7 +43,7 @@ session_start();
         
             <a href="#" class="nav-link active mt-auto"><i class="far fa-user-circle"></i> Profile</a>
                 <a href="#" class="nav-link"><i class="far fa-bell"></i> Notifications</a>
-                <a href="#" class="nav-link"><i class="far fa-file-alt"></i>View Appoinment</a>
+                <a href="viewappointment.html" class="nav-link"><i class="far fa-file-alt"></i>View Appoinment</a>
                 <a href="#" class="nav-link mb-auto"><i class="fas fa-cogs"></i> General</a>   
                 <a href="#" class="nav-link" ><i class="bi bi-box-arrow-right"></i>Logout</a>
  
@@ -58,7 +58,7 @@ session_start();
             
                 <a href="#" class="nav-link active mt-auto"><i class="far fa-user-circle"></i> Profile</a>
                 <a href="#" class="nav-link"><i class="far fa-bell"></i> Notifications</a>
-                <a href="#" class="nav-link"><i class="far fa-file-alt"></i> View Appoinment</a>
+                <a href="viewappointment.html" class="nav-link"><i class="far fa-file-alt"></i> View Appoinment</a>
                 <a href="#" class="nav-link mb-auto"><i class="fas fa-cogs"></i> General</a>
                 <a href="../index.php" class="nav-link"><i class="bi bi-box-arrow-right"></i><b>Logout</b></a>
             
