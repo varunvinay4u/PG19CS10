@@ -62,7 +62,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
 
 	{
 		//something was posted
-		$passwordnew = $_POST['newPassword'];
+		$passwordnew = password_hash($_POST['newPassword'], PASSWORD_DEFAULT);
 		$email=$_POST['email'];
 
 
