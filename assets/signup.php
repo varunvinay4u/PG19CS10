@@ -100,7 +100,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
 	{
 		//something was posted
 		$name =$_POST['name'];
-		$password = $_POST['password'];
+		$password = password_hash($_POST['password'], PASSWORD_DEFAULT);
    	$category=$_POST['register_as'];
 		$email=$_POST['email'];
 		$phoneNumber=$_POST['phoneNumber'];
