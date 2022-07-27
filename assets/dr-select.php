@@ -41,7 +41,7 @@ while($db_category_name  = mysqli_fetch_array($result)) {
         <option value="<?php print $a[1]; ?>"><?php print $a[1].", "; print $b[1]."<br>"; ?> </option>
 
     </select>
-    <a href="thankyou.html"> <input type="submit" name="submit" vlaue="Choose options"></a>
+    <a href="legal.php"> <input type="submit" name="submit" vlaue="Choose options"></a>
       
     <!-- for (let i = 0; i < 3; i++) { -->
       <!-- <script> 
@@ -87,7 +87,7 @@ include("connection.php");
     } else {
       #echo "Error: " . $sql . "<br>" . $con->error;
     }
-    header("Location: thankyou.html");
+    header("Location: legal.php");
     die;
     }
 
