@@ -41,7 +41,7 @@
   <div class="container">
     <h2>Terms And Conditions</h2>
     <p>
-      
+      OVERVIEW
 </p> <br><br>
     <div onload="disableSubmit()">
       <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)">  I Agree Terms & Coditions <br><br>
