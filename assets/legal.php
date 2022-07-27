@@ -41,14 +41,8 @@
   <div class="container">
     <h2>Terms And Conditions</h2>
     <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consectetur tenetur porro minus accusamus? Illo error ipsa ipsam id doloremque velit quae laudantium, debitis dicta vel est omnis modi quaerat?
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, esse delectus? Debitis quidem atque repellat, iusto accusantium aperiam vel dolorum suscipit minus quam incidunt tempora commodi est doloremque necessitatibus delectus.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam consectetur laborum dolore culpa eius veniam maiores esse amet ipsam, earum expedita similique porro, omnis officia. Quidem voluptate libero error perferendis.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo amet mollitia est adipisci dolore at? Et repudiandae repellat necessitatibus nihil molestiae quia facere? Quos numquam tempora facere impedit unde?
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ex vel, cumque earum ipsa ullam architecto ab dolore totam facilis accusamus laudantium, officia facere enim! Veniam quod sed totam omnis?
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti harum fuga, saepe animi ullam soluta vel praesentium. Asperiores reiciendis eaque ab. Molestias eveniet nostrum exercitationem assumenda recusandae ratione voluptates itaque.
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam enim suscipit molestias soluta itaque magnam quasi ducimus, ex similique earum laudantium eos, neque repellat? Nemo facere quis porro! Ut, earum.
-    </p> <br><br>
+      
+</p> <br><br>
     <div onload="disableSubmit()">
       <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)">  I Agree Terms & Coditions <br><br>
       <input type="submit" name="submit" id="submit">
