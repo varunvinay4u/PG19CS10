@@ -87,7 +87,7 @@ include("connection.php");
     } else {
       #echo "Error: " . $sql . "<br>" . $con->error;
     }
-    header("Location: thankyou.html");
+    header("Location: legal.php");
     die;
     }
 
