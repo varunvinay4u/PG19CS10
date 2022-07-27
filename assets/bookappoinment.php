@@ -108,7 +108,7 @@
                         </div>
                         <a class="findLocat btn"> Use Current Location </a>  
                     </div>
-                    <button href="dr-select.php" id="confirm" class="confirm btn">Confirm Booking </button>
+                    <a href="dr-select.php"><button  id="confirm" class="confirm btn">Confirm Booking </button></a>
                 </div>
             </div>
         </div>
@@ -117,7 +117,7 @@
 
 </body>
 
-    <script>
+    <!-- <script>
         // function myFunction() {
         //     document.getElementById("confirm").disabled = false;
         // }
@@ -129,14 +129,14 @@
         input.addEventListener("change", stateHandle);
 
         function stateHandle() {
-	    if (document.querySelector(".btn-appoinment").value === "") {
+	    if (document.querySelector(".btn-appoinment").value == "") {
 		    button.disabled = true;
 	    } else {
 		    button.disabled = false;
 	    }
     }
 
-    </script>
+    </script> -->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
@@ -195,8 +195,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
 
 #mysqli_query($con, $query);
 			#echo "$name, $state";
-			header("Location: thankyou.html");
-			die;
+			#header("Location: thankyou.html");
+			#die;
 		#}else
 		#{
 		#	echo "Please enter some valid information!";
