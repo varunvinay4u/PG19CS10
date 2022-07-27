@@ -42,6 +42,7 @@
     <h2>Terms And Conditions</h2>
     <p>
       OVERVIEW
+      This is a legally binding document governing the provision of the Mind BuddyBuddy our websitr. 
 </p> <br><br>
     <div onload="disableSubmit()">
       <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)">  I Agree Terms & Coditions <br><br>
