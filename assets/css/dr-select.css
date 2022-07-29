@@ -1,82 +1,57 @@
-* {
-    letter-spacing: 0.035em;
-  }
-  
-  html,
-  body {
-    height: 100%;
-    background: linear-gradient(90deg, #090979 0%, #2020bd 35%, #00d4ff 100%);
-    display: grid;
-    --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  #content {
-    margin: auto;
-  }
-  
-  #label-select-application {
-    color: white;
-    font-size: 2rem;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 1rem;
-  }
-  
-  .custom-select {
-    width: 100%;
-    position: relative;
-  }
-  .custom-select__display {
-    background: white;
-    padding: 1rem 1rem;
-    border-radius: 8px;
-    cursor: pointer;
-    position: relative;
-    box-shadow: 0px 2px 6px 4px rgba(0, 0, 0, 0.12);
-  }
-  .custom-select__display::after {
-    content: " ";
-    background: #ababab;
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-    width: 1rem;
-    height: 1rem;
-    clip-path: polygon(0% 30%, 100% 30%, 50% 80%);
-  }
-  .custom-select__options {
-    position: relative;
-    list-style-type: none;
-    background: white;
-    padding: 0rem;
-    max-height: 8rem;
-    overflow-y: hidden;
-    border-radius: 8px;
-    opacity: 0;
-    transform: translateY(-8px) scale(0.95);
-    transform-origin: top center;
-    transition: transform 125ms var(--ease-standard), opacity 125ms var(--ease-standard);
-    pointer-events: none;
-  }
-  .custom-select__options li {
-    padding: 1rem;
-    cursor: normal;
-    background: white;
-    transition: background 125ms var(--ease-standard);
-    pointer-events: none;
-  }
-  .custom-select__options li:hover {
-    background: #efefef;
-  }
-  .custom-select__options.active {
-    opacity: 1;
-    transform: translateY(0px) scale(1);
-    pointer-events: all;
-    outline: none;
-    overflow-y: auto;
-    box-shadow: 0px 2px 6px 4px rgba(0, 0, 0, 0.12);
-  }
-  .custom-select__options.active li {
-    pointer-events: all;
-    cursor: pointer;
-  }
+*{
+  letter-spacing: 0.035em;
+  width: 100%;
+}
+
+html,body {
+  text-align: center;
+  height: 100%;
+  background: linear-gradient(90deg, #090979 0%, #2020bd 35%, #00d4ff 100%);
+  display: grid;
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.custom-select {
+  width: 20rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  padding: 7rem 3rem;
+  border-radius: 13px;
+  box-shadow: 0px 2px 6px 4px rgba(0, 0, 0, 0.12);
+}
+
+#label-select-application {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.custom-select select{
+  width: 20rem;
+  padding: 6px 0;
+  margin-top: 25px;
+  border-radius: 3px;
+}
+
+.custom-select input{
+  width: 9rem;
+  padding: 6px 0;
+  margin-top: 30px;
+  border-radius: 9px;
+  border: transparent;
+}
+.custom-select input:hover{
+  background: linear-gradient(90deg, #09097931 0%, #2020bd31 35%, #00d4ff31 100%);
+  color: #fff;
+}
+.custom-select input:active{
+  opacity: 1;
+  pointer-events: all;
+  outline: none;
+  overflow-y: auto;
+  box-shadow: 0px 2px 6px 4px rgba(0, 0, 0, 0.12);
+}
