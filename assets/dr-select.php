@@ -40,8 +40,8 @@ while($db_category_name  = mysqli_fetch_array($result)) {
         <option value="<?php print $a[0]; ?>"><?php print $a[0].", "; print $b[0]."<br>"; ?></option>
         <option value="<?php print $a[1]; ?>"><?php print $a[1].", "; print $b[1]."<br>"; ?> </option>
 
-    </select>
-    <a href="legal.php"> <input type="submit" name="submit" vlaue="Choose options"></a>
+  </select> <br>
+  <a href="legal.php"> <input type="submit" name="submit" vlaue="Choose options"></a>
       
     <!-- for (let i = 0; i < 3; i++) { -->
       <!-- <script> 
